@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+1263px
+
+img{
+    width: 20%;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Assistant', sans-serif;
+}
+
+#color1{
+    width: 100%;
+    background-color: #000;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+#color1 h1{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 12px 0;
+    font-style: oblique;
+    font-weight: 200;
+    display: inline-block;
+}
+
+#logo{
+    width: 41px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#color2{
+    width: 100%;
+    background-color: #233237;
+    padding: 16px 0px;
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+
+#menu{
+    width: 1000px;
+    margin: auto;
+}
+
+#menu a{
+    color: white;
+}
+
+.hh{
+    display: inline-block;
+    padding-right: 135px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#last{
+    padding-right: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#top{
+    width: 1263px;
+    margin: auto;
+    background-image: url(https://freshersmag.com/wp-content/uploads/2016/09/Knocki-FreshersMag-00.jpg);
+    background-size: cover;
+    height: 650px;   
+}
+
+#top h1{
+    float: right;
+    font-size: 90px;
+    padding: 360px 25px 0px 0px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px 3px;
+}
+
+#competitors{
+    width: 1263px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.comp{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    width: 720px;
+    margin: auto;
+}
+
+#competitors img{
+    width: 400px;
+    height: 300px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: white;
+}
+
+#competitors table{
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+table h1{
+    width: 370px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    text-shadow: white 1px 1px 2px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.left{
+    background-color: white;
+    margin-left: 130px;
+}
+
+.right{
+    background-color: white;
+    margin-right: 0px;
+}
+
+#competitors #im1{
+    margin-left: 88px;
+}
+
+#competitors #im2{
+    margin-left: 15px;
+}
+
+#competitors #nest{
+    margin-left: 50px;
+}
+
+#kisi{
+    width: 1263px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(https://global-uploads.webflow.com/5a06fcae4056cc00011eebfc/5af04973f167d6a9096a0ad9_wavy-40.svg);
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+#kisi img{
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+table h1{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: black 1px 1px 2px;
+    margin-top: 50px;
+}
+
+#description{
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    width: 800px;
+    padding: 8px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+#kishead{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+    font-weight: 600;
+    padding-top: 20px;     
+}
+
+#kisi table{
+    margin-left: 30px;
+}
+
+#text1{
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 60px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.s{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: darkred;
+    text-shadow: black 1px 1px 2px;
+    
+}
+
+.t{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#text2{
+    display: inline-block;
+    width: 450px;
+    margin-left: 170px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 10px;   
+}
+
+#nesthead{
+    margin: 10px 0px 0px 20px;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+#nest1{
+    width: 1263px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(https://pro.nest.com/images/redesign/home-page/connected-slide/floor-plan_desktop_c_2x-fcafa745121725351a57d50494253900.png);
+    background-color: #21afd6;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+#nest1 img{
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#nest1 #description{
+    margin-top: 7px;
+}
+
+#description2{
+    background-color: white;
+    float: right;
+    margin-right: 0px;
+    margin-top: 160px;
+    width: 350px;
+    padding: 8px 30px 30px 30px;
+    border-radius: 20px;
+}

@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+1263px
+img{
+    width: 20%;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Assistant', sans-serif;
+}
+
+#color1{
+    width: 100%;
+    background-color: #000;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+#color1 h1{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 12px 0;
+    font-style: oblique;
+    font-weight: 200;
+    display: inline-block;
+}
+
+#logo{
+    width: 41px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#color2{
+    width: 100%;
+    background-color: #233237;
+    padding: 16px 0px;
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+
+#menu{
+    width: 1000px;
+    margin: auto;
+}
+
+#menu a{
+    color: white;
+}
+
+li{
+    display: inline-block;
+    padding-right: 135px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#last{
+    padding-right: 0;
+}
+
+#team{
+    width: 1263px;
+    height: 400px;
+    margin: 85px auto 0 auto;
+    background-image: url(https://knocki.com/images/5c3eb7d50050e506a4b8aeac_Kweb_home_banner_surface2-copy.jpg);
+    background-size: cover;
+    background-color: inherit;
+}
+
+#team h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+#team p{
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+
+#members {
+    height: 580px;
+    width: 1263px;
+    margin: 50px auto 0px auto;
+    background-image: url(https://wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-38.jpg);
+    background-size: cover;
+}
+
+
+table{
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#members table h1{
+    margin: 50px 0px 30px 30px;
+    width: 550px;
+    height: 120px;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 45px;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+.c1{
+    padding-left: 15px;
+    text-align: left;
+}
+
+.c2{
+    text-align: right;
+    margin-right: 0px;
+}
+
+#members a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#crew{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 90px;
+    font-weight: 600;
+    color: white;  
+    text-shadow: black 1px 1px 10px;
+}
+
+#Carla{
+    margin: 50px auto 0px auto; 
+    height: 410px;
+    width: 1263px;
+}
+
+#CARLA img{
+    top: 4px;
+    width: 350px;
+    height: 302px;
+    float: right;
+    margin: 23px 70px 0px 0px;
+    padding: 30px;
+    background-color: white;
+}
+
+#textC{
+    float: left;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    width: 640px;
+}
+
+#textC h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#textC p{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#Oscar{
+    margin: 50px auto 0px auto; 
+    height: 410px;
+    width: 1263px;
+    
+}
+
+#OSCAR img{
+    top: 4px;
+    width: 350px;
+    height: 302px;
+    float: right;
+    margin: 23px 70px 0px 0px;
+    padding: 30px;
+    background-color: white;
+}
+
+#textO{
+    float: left;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    width: 640px;
+}
+
+#textO h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#textO p{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+#Ignacio{
+    margin: 50px auto 0px auto; 
+    height: 410px;
+    width: 1263px;
+    
+}
+
+#IGNACIO img{
+    top: 4px;
+    width: 350px;
+    height: 302px;
+    float: right;
+    margin: 23px 70px 0px 0px;
+    padding: 30px;
+    background-color: white;
+}
+
+#textI{
+    float: left;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    width: 640px;
+}
+
+#textI h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#textI p{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+#Angel{
+    margin: 50px auto 50px auto; 
+    height: 410px;
+    width: 1263px;
+    
+}
+
+#ANGEL img{
+    top: 4px;
+    width: 350px;
+    height: 302px;
+    float: right;
+    margin: 23px 70px 0px 0px;
+    padding: 30px;
+    background-color: white;
+}
+
+#textA{
+    float: left;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    width: 640px;
+}
+
+#textA h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#textA p{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    
+}
