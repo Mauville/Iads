@@ -1,0 +1,91 @@
+= Instrucciones
+
+:imagesdir: imagesdir/
+
+Git es un programa que nos permite controlar los cambios que todos hacemos para que no haya problemas de compatibilidad entre versiones. Ademas de esto, tambien nos permite subir el contenido al servidor FTP del profe de manera automatica.
+
+Cree una serie de pequenos scripts para que sea mas facil para todos emplear git y FTP. Este es un pequeno manual sobre como instalarlos. En la carpeta Scripts, hay varios archivos numerados. Hare referencias a ellos por sus numeros unicamente.
+
+== Prework 
+
+Para que esto funcione, necesitas una cuenta de Github, si no tienes una, puedes hacerla https://www.github.com[aqui].
+
+Una vez que tengas tu cuenta, vamos a necesitar llenar algunos datos en los scripts `03` y  `04`. 
+En `03`, cambia los brackets `[YOURNAMEHERE]` por tu nombre:
+ 
+ [Environment]::SetEnvironmentVariable("name", "[YOURNAMEHERE]", "User")
+
+a 
+
+ [Environment]::SetEnvironmentVariable("name", "Inmannuel", "User")
+
+En `04`, cambia los brackets `[YOURUSERNAMEHERE]` por tu nombre de usuario en github y `[YOUREMAILHERE]` por el correo que usaste para registrarte:
+
+ git config --global user.name "YOURUSERNAMEHERE"
+
+a
+
+ git config --global user.name "GordiBueno86"
+
+y
+
+ git config --global user.email "YOUREMAILHERE"
+
+a
+
+ git config --global user.email "A0128448@itesm.mx"
+
+
+Guarda tus cambios. 
+
+== Setup
+
+. Abre una ventana de de administrador de PowerShell en el directorio `Scripts`. Abre inicio y escribe `powershell`. Da un clic derecho en la entrada `powershell.exe` y selecciona `Correr con permisos de Administrador`.
+
+image::1.png[]
+
+. Navega al directorio donde estan los archivos usando `cd` como lo harias con una ventana de cmd normal.
+
+NOTE: Cada vez que te pida abrir una ventana de Powershell dentro de este tutorial, repite estos mismos pasos. 
+
+. Copia el contenido de `01` a tu ventana de Powershell y presiona Enter.
+
+. Dile que si a todo.
+
+== Instalacion
+. Ahora vamos a ejecutar el archivo `02` `03` y `04` para instalar git y preparar el espacio de trabajo.
+
+    .. En la ventana de powershell que tienes abierta, escribe `02` y presiona TAB para completar el nombre de archivo. Presiona ENTER.
+
+    .. Dale que si a todo.
+
+    .. Una vez que se haya terminado de ejecutar, cierra tu ventana de Powershell y vuelve a abrir otra como se senala en la seccion 1.
+
+    .. Repite los pasos i y ii cambiando el `02` por `03` y una vez mas con el `04`.
+
+Ahora tendras la carpeta con la pagina web junto con la carpeta Scripts. Borra la carpeta vieja y utiliza unicamente la nueva que se encuentra dentro de la del sitio.
+
+== Workflow
+
+Git funciona a base de "parches" que se aplican al programa base.
+Para empezar a realizar cambios es necesario crear un parche nuevo. Esto se hace corriendo `05`.
+
+Una vez que un parche haya sido creado, puedes empezar a modificar los archivos.
+
+Cuando que hayas realizado cambios al los archivos de la carpeta, sera necesario subir el parche al servidor FTP y a git. Usa `06` para esto.
+
+El flujo de trabajo es
+
+. Crea un parche con `05`
+. Trabaja
+. Sube cambios con `06`
+. Repite
+
+
+NOTE: El numero de parches en git no deben de ser muchos, asi que sugiero subirlos al final del dia o al terminar de hacer una determinada tarea. Procura no subir cambios mas de una vez al dia.  
+
+NOTE: Como todos vamos a estar trabajando en el archivo, puede que los cambios en el servidor FTP no se vean correctamente.
+Si esto llegara a ocurrir, `06` esta disenado para llevar un control externo de los cambios que yo puedo modificar. 
+Si llegara a ocurrir algun problema, yo lo resolveria antes de entregarlo.  
+
+WARNING: Trate de automatizar lo mas posible el uso de git y subir los archivos pero no es infalible. Puede que halla errores. Aun asi, creo que el esfuerzo lo vale.
