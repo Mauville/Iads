@@ -164,20 +164,36 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+    .titles {
+        padding: 4vh 4vw;
+    }
     #textC {
         float: unset;
-        margin-left: unset;
+        margin-left: auto;
         margin-top: unset;
+        margin-right: auto;
+    }
+    #Carla {
+        margin: 4vh auto;
+        height: auto;
+        width: auto;
+    }
+    #Carla img {
+        max-width: 75vw;
+        width: unset;
+        display: block;
+        background-color: #233237;
+        margin-left: auto;
+        margin-right: auto;
+        float: unset;
     }
     iframe {
-        margin-top: 18vh;
+        margin: 13vh auto 0 auto;
+        display: block;
     }
-    #carla {
-        margin: 0px auto;
-        height: 278px;
-        width: 100%;
-    }
-    #carla img{
-        
+    #first {
+        margin-top: 27px;
+        background-color: transparent;
+        font-size: 3vh;
     }
 }
