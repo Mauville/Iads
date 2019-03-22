@@ -30,10 +30,12 @@ body {
     display: inline-block;
 }
 
-#logo {
-    width: 41px;
+#logo{
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 11px;
+    margin-top: 3px;
 }
 
 #color2 {
@@ -45,18 +47,23 @@ body {
     position: fixed;
 }
 
-#menu {
-    width: 1000px;
+#menu{
+    width: 100%;
     margin: auto;
+    max-width: 1300px;
 }
 
 #menu a {
     color: white;
 }
 
-.hh {
+.hhh{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hh{
     display: inline-block;
-    padding-right: 135px;
     font-size: 16px;
     font-weight: 600;
     color: white;

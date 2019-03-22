@@ -81,9 +81,11 @@ body{
 }
 
 #logo{
-    width: 41px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 11px;
+    margin-top: 3px;
 }
 
 #color2{
@@ -96,17 +98,22 @@ body{
 }
 
 #menu{
-    width: 1000px;
+    width: 100%;
     margin: auto;
+    max-width: 1300px;
 }
 
 #menu a{
     color: white;
 }
 
+.hhh{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .hh{
     display: inline-block;
-    padding-right: 135px;
     font-size: 16px;
     font-weight: 600;
     color: white;
