@@ -74,12 +74,18 @@ body{
     padding-right: 0;
 }
 
+.mwrapper{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
 #team{
-    width: 1263px;
+    width: 100%;
     height: 400px;
     margin: 85px auto 0 auto;
     background-image: url(https://knocki.com/images/5c3eb7d50050e506a4b8aeac_Kweb_home_banner_surface2-copy.jpg);
-    background-size: cover;
+    background-size: 100% 145%;
     background-color: inherit;
 }
 
@@ -94,17 +100,19 @@ body{
 #team p{
     font-size: 40px;
     font-weight: 300;
-    padding-top: 50px;
+    padding-top: 41px;
     padding-left: 20px;
 }
 
 
 #members {
     height: 580px;
-    width: 1263px;
+    width: 100%;
     margin: 50px auto 0px auto;
     background-image: url(https://wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-38.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -115,9 +123,11 @@ table{
 }
 
 #members table h1{
-    margin: 50px 0px 30px 30px;
-    width: 550px;
-    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: auto;
+    height: auto: ;
     font-size: 60px;
     font-weight: 600;
     padding-top: 45px;
@@ -132,7 +142,7 @@ table{
 
 .c2{
     text-align: right;
-    margin-right: 0px;
+    margin-right: 20px;
 }
 
 #members a{
@@ -144,8 +154,8 @@ a{
 }
 
 #crew{
-    text-align: center;
-    padding-top: 10px;
+    margin: auto;
+    padding-top: 20px;
     font-size: 90px;
     font-weight: 600;
     color: white;  
@@ -154,8 +164,10 @@ a{
 
 #Carla{
     margin: 50px auto 0px auto; 
-    height: 410px;
-    width: 1263px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #CARLA img{
@@ -163,7 +175,7 @@ a{
     width: 350px;
     height: 302px;
     float: right;
-    margin: 23px 70px 0px 0px;
+    margin: 23px 0px 0px 50px;
     padding: 30px;
     background-color: white;
 }
@@ -188,9 +200,11 @@ a{
 }
 
 #Oscar{
-    margin: 50px auto 0px auto; 
-    height: 410px;
-    width: 1263px;
+    margin: 150px auto 0px auto; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -199,7 +213,7 @@ a{
     width: 350px;
     height: 302px;
     float: right;
-    margin: 23px 70px 0px 0px;
+    margin: 23px 0px 0px 50px;
     padding: 30px;
     background-color: white;
 }
@@ -225,9 +239,11 @@ a{
 }
 
 #Ignacio{
-    margin: 50px auto 0px auto; 
-    height: 410px;
-    width: 1263px;
+    margin: 150px auto 0px auto; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -236,7 +252,7 @@ a{
     width: 350px;
     height: 302px;
     float: right;
-    margin: 23px 70px 0px 0px;
+    margin: 23px 0px 0px 50px;
     padding: 30px;
     background-color: white;
 }
@@ -262,9 +278,11 @@ a{
 }
 
 #Angel{
-    margin: 50px auto 50px auto; 
-    height: 410px;
-    width: 1263px;
+    margin: 150px auto 50px auto; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -273,7 +291,7 @@ a{
     width: 350px;
     height: 302px;
     float: right;
-    margin: 23px 70px 0px 0px;
+    margin: 23px 0px 0px 50px;
     padding: 30px;
     background-color: white;
 }
