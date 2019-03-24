@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>About Us</title>
-        <link href="Styles/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet"> 
-    </head>
-    <body>
-        <div id="color1">
-            <h1>IADS</h1>
-            <img src="Images/logo3.jpg" id="logo">
-        </div>
 
-        <div id="color2">
-            <div id = "menu">
-                <ul class="hhh">
-                    <li class="hh"><a href="index.html">About us</a></li>
-                    <li class="hh"><a href="personas.html">Personas profiles</a></li>
-                    <li class="hh"><a href="benchmarking.html">Benchmarking</a></li>
-                    <li class="hh"><a href="prototype.html">Prototype</a></li>
-                    <li class="hh" id="last">Concept Tests</li>
-                </ul>
-            </div></div>
-        
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | IADS</title>
+    <link href="Styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('#header').load('header.html', function () { alert('loaded') });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Header has been isolated in a single HTML and CSS file. To modify, please change header.html and header.css -->
+    <!-- Please do not add new CSS rules to style the header in the stylesheet of this page. Use the header.css file -->
+
+    <header id="header">
+
         <div class="mwrapper">
-        <div id = "team">
-            <h1>Mission</h1>
-            <p>If you have a problem, get wifi <br><br>and we'll have your solution.</p>
-        </div>
+            <div id="team">
+                <h1>Mission</h1>
+                <p>If you have a problem, get wifi <br><br>and we'll have your solution.</p>
+            </div>
 
-        <div id = "members">
-            <h1 id="crew">Meet the crew</h1>
-            <table>
-                <tr>
-                    <td><h1 class="c1"><a href="#CARLA">Carla Jardón</a></h1></td>
-                    <td><h1 class="c2"><a href="#OSCAR">Oscar Vargas</a></h1></td>
-                </tr>
+            <div id="members">
+                <h1 id="crew">Meet the crew</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="c1"><a href="#CARLA">Carla Jardón</a></h1>
+                        </td>
+                        <td>
+                            <h1 class="c2"><a href="#OSCAR">Oscar Vargas</a></h1>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td><h1 class="c1"><a href="#IGNACIO">Ignacio Alvarado</a></h1></td>
-                    <td><h1 class="c2"><a href="#ANGEL">Ángel Heredia</a></h1></td>
-                </tr>
-            </table>
-        </div>
+                    <tr>
+                        <td>
+                            <h1 class="c1"><a href="#IGNACIO">Ignacio Alvarado</a></h1>
+                        </td>
+                        <td>
+                            <h1 class="c2"><a href="#ANGEL">Ángel Heredia</a></h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-        <a name="CARLA" id="CARLA">
-            <div id="Carla">
-                <div id="textC">
-                    <h1>Carla Aline Jardón Hernández</h1>
-                    <p>I'm studying a degree in communication and digital media. I am currently studying the sixth semester. The reason why I decided to study this career is because I want to communicate positive and informative things to people, things of value that can produce a change in people's behavior and, therefore, in the impact of their actions in life. in the short or long term. Among my general interests are playing sports, watching series, traveling, animals and photography.</p>
+            <a name="CARLA" id="CARLA">
+                <div id="Carla">
+                    <div id="textC">
+                        <h1>Carla Aline Jardón Hernández</h1>
+                        <p>I'm studying a degree in communication and digital media. I am currently studying the sixth
+                            semester. The reason why I decided to study this career is because I want to communicate
+                            positive and informative things to people, things of value that can produce a change in
+                            people's
+                            behavior and, therefore, in the impact of their actions in life. in the short or long term.
+                            Among my general interests are playing sports, watching series, traveling, animals and
+                            photography.</p>
+                    </div>
+                    <img src="Images/carlaejemplo2.jpg">
                 </div>
-                <img src="Images/carlaejemplo2.jpg">   
-            </div></a>
+            </a>
 
-        <a name="OSCAR" id="OSCAR">
-            <div id="Oscar">
-                <div id="textO">
-                    <h1>Oscar Vargas Pérez</h1>
-                    <p>Pragmatism. Optimization. Customizability. These qualities are what I base all of my passions off. Currently in second semester, I study Computer's Engineering. I value hard work, industriousness and incisiveness.</p>
-                </div> 
-                <img src="Images/oscarejemplo.jpg">   
-            </div></a>
-
-        <a name="IGNACIO" id="IGNACIO">
-            <div id="Ignacio">
-                <div id="textI">
-                    <h1>Ignacio Alvarado Reyes</h1>
-                    <p>I'm currently studying ITC. I decided to study this due to my interest in designing and programming videogames, however it is also important for me software and cyber-security topics. Some of my personal hobbies are playing videogames and watching horror movies.</p> 
+            <a name="OSCAR" id="OSCAR">
+                <div id="Oscar">
+                    <div id="textO">
+                        <h1>Oscar Vargas Pérez</h1>
+                        <p>Pragmatism. Optimization. Customizability. These qualities are what I base all of my passions
+                            off. Currently in second semester, I study Computer's Engineering. I value hard work,
+                            industriousness and incisiveness.</p>
+                    </div>
+                    <img src="Images/oscarejemplo.jpg">
                 </div>
-                <img src="Images/ignacioejemplo1.jpg">   
-            </div></a>
+            </a>
 
-        <a name="ANGEL" id="ANGEL">
-            <div id="Angel">
-                <div id="textA">
-                    <h1>Ángel Heredia Vázquez</h1>
-                    <p>I study second semester of ITC at ITESM. I chose this carrer because I love programming and being surrounded by computers and technology. I will want to focus on cybersecurity one day and develop new products of my own. </p>
-                </div> 
-                <img src= "Images/angelejemplo1.jpg">   
-            </div></a>
-    </div>
-    </body>
+            <a name="IGNACIO" id="IGNACIO">
+                <div id="Ignacio">
+                    <div id="textI">
+                        <h1>Ignacio Alvarado Reyes</h1>
+                        <p>I'm currently studying ITC. I decided to study this due to my interest in designing and
+                            programming videogames, however it is also important for me software and cyber-security
+                            topics.
+                            Some of my personal hobbies are playing videogames and watching horror movies.</p>
+                    </div>
+                    <img src="Images/ignacioejemplo1.jpg">
+                </div>
+            </a>
+
+            <a name="ANGEL" id="ANGEL">
+                <div id="Angel">
+                    <div id="textA">
+                        <h1>Ángel Heredia Vázquez</h1>
+                        <p>I study second semester of ITC at ITESM. I chose this carrer because I love programming and
+                            being
+                            surrounded by computers and technology. I will want to focus on cybersecurity one day and
+                            develop new products of my own. </p>
+                    </div>
+                    <img src="Images/angelejemplo1.jpg">
+                </div>
+            </a>
+        </div>
+</body>
+
 </html>

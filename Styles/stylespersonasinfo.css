@@ -172,7 +172,7 @@ q {
 @media screen and (max-width: 800px) {
     h2 {
         position: sticky;
-        top: 12.5vh;
+        top: 14.7vh;
         background-color: #f2f2f2;
         padding: 2.7vh;
         border-bottom: 1px solid black;

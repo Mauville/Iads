@@ -1,0 +1,73 @@
+/* Header styles.  */
+img{
+    width: 20%;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Assistant', sans-serif;
+}
+
+#color1{
+    width: 100%;
+    background-color: #000;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+#color1 h1{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 12px 0;
+    font-style: oblique;
+    font-weight: 200;
+    display: inline-block;
+}
+
+#logo{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 3px;
+}
+
+#color2{
+    width: 100%;
+    background-color: #233237;
+    padding: 16px 0px;
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+
+#menu{
+    width: 100%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+#menu a{
+    color: white;
+}
+
+.hhh{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hh{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#last{
+    padding-right: 0;
+}
