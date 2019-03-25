@@ -317,7 +317,7 @@ a{
     text-align: center;
 }
 
-@media (max-width:680px){
+@media (max-width:980px){
     
     #menu{
         display: flex;
@@ -331,31 +331,47 @@ a{
     
     .hhh{
         flex-direction: column;
-        margin-bottom: 4px;
+        margin-bottom: 70px;
     }
     
     .hh{
         margin: auto;
-        padding-top: 20px;
-        font-size: 20px;
+        padding-top: 50px;
+        font-size: 45px;
     }
     
     #color2{
         display: flex;
         align-content: center;
         height: auto;
+        top: 110px;
+        padding: 0;
     }
     
-        #brg{
+    #color1{
+        height: 110px;
+    }
+    
+    #color1 h1{
+        font-size: 78px;
+    }
+    
+    #logo{
+        width: 100px;
+        height: 100px;
+        margin-left: 34px;
+    }
+    
+    #brg{
         display: block;
-        width: 27px;
-        margin: auto;
-        margin-top: -8px;
+        width: 78px;
+        margin-top: 20px;
+        margin-bottom: 22px;
     }
     
     #team{
-        background-size: 109% 145%;
-        height: 296px;
+        background-size: 139% 145%;
+        height: 520px;
     }
     
     #team h1{
@@ -374,10 +390,12 @@ a{
     
     #members table h1{
         font-size: 5vh;
+        width: 85%;
+        line-height: 100px;
     }
     
     #crew{
-        font-size: 43px;
+        font-size: 108px;
     }
     
     #textC{
@@ -390,13 +408,19 @@ a{
     }
     
     #textC p{
-        font-size: 3vh;
+        font-size: 4vh;
+        margin-top: 60px;
     }
     
     #Carla img{
         margin-left: 0;
         width: 60%;
         height: 60%;
+        margin-top: 108px;
+    }
+    
+    #Carla{
+        margin-top: 80px;
     }
     
     #textO{
@@ -409,13 +433,19 @@ a{
     }
     
     #textO p{
-        font-size: 3vh;
+        font-size: 4vh;
+        margin-top: 60px;
     }
     
     #Oscar img{
         margin-left: 0;
         width: 60%;
         height: 60%;
+        margin-top: 108px;
+    }
+    
+    #Oscar{
+        margin-top: 200px;
     }
     
     #textI{
@@ -428,13 +458,18 @@ a{
     }
     
     #textI p{
-        font-size: 3vh;
+        font-size: 4vh;
     }
     
     #Ignacio img{
         margin-left: 0;
         width: 60%;
         height: 60%;
+        margin-top: 108px;
+    }
+    
+    #Ignacio{
+        margin-top: 200px;
     }
     
     #textA{
@@ -447,12 +482,17 @@ a{
     }
     
     #textA p{
-        font-size: 3vh;
+        font-size: 4vh;
     }
     
     #Angel img{
         margin-left: 0;
         width: 60%;
         height: 60%;
+        margin-top: 108px;
+    }
+    
+    #Angel{
+        margin-top: 200px;
     }
 }
