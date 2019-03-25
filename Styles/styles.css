@@ -317,7 +317,7 @@ a{
     text-align: center;
 }
 
-@media (max-width:980px){
+@media screen and (max-width: 980px){
     
     #menu{
         display: flex;
@@ -331,42 +331,43 @@ a{
     
     .hhh{
         flex-direction: column;
-        margin-bottom: 70px;
+        margin-bottom: 3vh;
     }
     
     .hh{
         margin: auto;
-        padding-top: 50px;
-        font-size: 45px;
+        padding-top: 3vh;
+        font-size: 3vh;
     }
     
     #color2{
         display: flex;
         align-content: center;
         height: auto;
-        top: 110px;
+        top: 6vh;
         padding: 0;
     }
     
     #color1{
-        height: 110px;
+        height: 6vh;
     }
     
     #color1 h1{
-        font-size: 78px;
+        font-size: 4vh;
+        padding: 1vh 0;
     }
     
     #logo{
-        width: 100px;
-        height: 100px;
-        margin-left: 34px;
+        width: 5vh;
+        height: 5vh;
+        margin-left: 2vh;
     }
     
     #brg{
         display: block;
-        width: 78px;
-        margin-top: 20px;
-        margin-bottom: 22px;
+        width: 4vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
     
     #team{
@@ -375,12 +376,12 @@ a{
     }
     
     #team h1{
-        font-size: 5vh;
+        font-size: 80px;
         padding-top: 4px;
     }
     
     #team p{
-        font-size: 3vh;
+        font-size: 54px;
         font-weight: 600;
     }
     
