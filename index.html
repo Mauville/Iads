@@ -14,6 +14,8 @@
 
         <div id="color2">
             <div id = "menu">
+               <img src="Images/menu.svg" id="brg">
+                <div class="brgmenu">
                 <ul class="hhh">
                     <li class="hh"><a href="index.html">About us</a></li>
                     <li class="hh"><a href="personas.html">Personas profiles</a></li>
@@ -21,6 +23,7 @@
                     <li class="hh"><a href="prototype.html">Prototype</a></li>
                     <li class="hh" id="last">Concept Tests</li>
                 </ul>
+                </div>
             </div></div>
         
         <div class="mwrapper">
@@ -59,7 +62,7 @@
                     <h1>Oscar Vargas Pérez</h1>
                     <p>Pragmatism. Optimization. Customizability. These qualities are what I base all of my passions off. Currently in second semester, I study Computer's Engineering. I value hard work, industriousness and incisiveness.</p>
                 </div> 
-                <img src="Images/oscarejemplo.jpg">   
+                <img src="Images/oscarejemplo1.jpg">   
             </div></a>
 
         <a name="IGNACIO" id="IGNACIO">
@@ -81,4 +84,13 @@
             </div></a>
     </div>
     </body>
+    
+    <script src="js/jquery.min.js"></script>
+    <script>
+        
+    $('#brg').on('click', function(){
+          $('.brgmenu').slideToggle();
+      })
+        
+    </script>
 </html>
