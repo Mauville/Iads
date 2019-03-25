@@ -173,7 +173,7 @@ q {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .block1, .block2 {
         padding-top: 18px;
         padding-bottom: 18px;

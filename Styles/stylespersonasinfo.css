@@ -169,7 +169,7 @@ q {
     border-radius: 12px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     h2 {
         position: sticky;
         top: 12.5vh;
