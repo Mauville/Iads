@@ -50,13 +50,28 @@ table {
 @media (max-width: 600px){
 
     body{
-        background-color: white;
+		background-color: white;
+		font-family: 'Work Sans', sans-serif;
+	}
+
+	#headbar{
+		width: 100%;
+		background-color: #40bbe3;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#headbar h1{
+		font-size: 6vh;
+		color: white;
 	}
 	
 	#wrapper{
 		margin: auto;
 		width: 70%;
-		margin-top: 5vh;
+		margin-top: 7vh;
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
@@ -68,9 +83,9 @@ table {
 	}
 
 	.form{
-		margin-top: 10vh;
+		margin-top: 8vh;
 		width: 90%;
-		height: 42px;
+		height: 52px;
 		border-radius: 4px;
 		border-color: black;
 		border-style: none;
@@ -84,14 +99,16 @@ table {
 	}
 
 	.button{
+		font-family: 'Work Sans', sans-serif;
 		width: 60%;
-		height: 35px;
-		margin-top: 10vh;
+		height: 45px;
+		margin-top: 8vh;
 		border-radius: 19px;
 		background-color: #40bbe3;
 		font-size: 3vh;
+		font-weight: 200;
 		border-style: none;
-		border-color: 14px solid black;
+		color: white;
 	}
 
 	#bottombutton{
