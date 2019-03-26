@@ -90,6 +90,8 @@ table {
 		border-radius: 19px;
 		background-color: #40bbe3;
 		font-size: 3vh;
+		border-style: none;
+		border-color: 14px solid black;
 	}
 
 	#bottombutton{
