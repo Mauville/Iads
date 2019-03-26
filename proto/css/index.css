@@ -5,7 +5,7 @@
 	#wrapper {
 		margin: auto;
 		width: 70%;
-		margin-top: 7vh;
+		margin-top: 2vh;
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
@@ -31,24 +31,22 @@
 		height: 45px;
 		margin-top: 8vh;
 		background-color: var(--primary);
-		font-size: 3vh;
+		font-size: 1.2rem;
 		font-weight: 500;
 		color: white;
+		box-shadow: var(--buttonShadow);
 	}
 	#bottombutton {
 		margin-top: 2vh;
 		background-color: var(--primary-dark);
 	}
-	.button:hover{
-		background-color: red;
-	}
-	#bottombutton:hover{
-		background-color: red;
-	}
+	/* Hover is required to go before active */
+	.button:hover {}
+	#bottombutton:hover {}
 	.button:active {
-		background-color: green;
+		background-color: var(--primary-light)
 	}
 	#bottombutton:active {
-		background-color: green;
+		background-color: var(--primary)
 	}
 }
