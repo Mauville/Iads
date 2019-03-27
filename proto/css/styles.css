@@ -62,23 +62,39 @@ table {
     border-spacing: 0;
 }
 
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 4.0125rem;
+    letter-spacing: .0000025rem;
+    background-color: var(--bacco);
 }
 
-#headbar {
+header {
+    letter-spacing: .0000025rem;
     width: 100%;
     background-color: var(--primary);
-    height: 60px;
+    height: 50px;
+    box-shadow: var(--buttonShadow);
+    background-color: var(--primary);
+    font-family: 'Roboto', sans-serif;
     display: flex;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
 }
 
-#headbar h1 {
+header h1 {
     font-size: 1.4rem;
     color: white;
+    padding-left: 15px;
+}
+
+header img{
+    height: 63%;
+    filter: invert(100%);
+    margin-left: auto;
+    padding-right: 6%
 }
 
 .form {
