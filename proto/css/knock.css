@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+    #wrapper {
+        display: grid;
+        margin-top: 7vh;
+        border-radius: 21px;
+        border: 4px solid #bcbcbc;
+        height: 70vh;
+    }
+    .button {
+        width: 30%;
+        height: 45px;
+        background-color: var(--good);
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        margin-left: 13vw;
+        box-shadow: var(--buttonShadow);
+    }
+    #middlebutton {
+        background-color: unset;
+        box-shadow: none;
+        color: var(--primary-dark);
+        margin-left: unset;
+        font-kerning: 1;
+    }
+    #bottombutton {
+        background-color: var(--bad);
+        margin-left: unset;
+    }
+    form {
+        position: absolute;
+        width: 100%;
+        bottom: 4vh;
+        justify-content: center;
+        margin-top: 7vh auto 0 auto;
+        display: flex;
+    }
+}
