@@ -88,13 +88,21 @@ header h1 {
     padding-left: 24px;
 }
 
-header img {
-    height: 63%;
-    filter: invert(100%);
-    margin-left: auto;
-    padding-right: 6%
+header .materialIcon {
+    font-family: "Material Icons";
+    color: white;
+    font-size: 1.7rem;
 }
-
+header #back{
+    margin-left: 4vw;
+}
+header #more{
+    margin-left: auto;
+    padding-right: 3%
+}
+header a{
+    text-decoration: none;
+}
 .form {
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
