@@ -62,18 +62,16 @@ table {
     border-spacing: 0;
 }
 
-
-
-
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: .0000025rem;
     background-color: var(--bacco);
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 header {
     letter-spacing: .0000025rem;
     width: 100%;
@@ -99,16 +97,20 @@ header .materialIcon {
     color: white;
     font-size: 1.7rem;
 }
-header #back{
+
+header #back {
     margin-left: 4vw;
 }
-header #more{
+
+header #more {
     margin-left: auto;
     padding-right: 3%
 }
-header a{
+
+header a {
     text-decoration: none;
 }
+
 .form {
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
@@ -128,18 +130,18 @@ header a{
 
 .cornerButton {
     position: absolute;
-    font-size: 25px;
+    font-size: 1.46rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--primary);
-    width: 62px;
-    height: 62px;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: auto;
     font-family: "Material Icons";
     border-radius: 50%;
     color: white;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
-    bottom: 2vh;
-    right: 1vh;
+    bottom: 3vh;
+    right: 2vh;
 }

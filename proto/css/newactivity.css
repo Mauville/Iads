@@ -1,49 +1,40 @@
-#tittle{
-    font-size: 6vh;
-    margin: auto;
-    text-align: center;
-}
-
 #iconwrapper{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-auto-flow: row;
+    row-gap: 4.2vh;
+    place-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17vh;
 }
 
 #iconwrapper a{
-    display: grid;
     width: auto;
-    margin-top: 6vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
     text-align: center;
-    font-size: 4vh;
-    text-transform: uppercase;
+    font-size: 1.1rem;
 }
-
-.icon {
-    width: 23vw;
-    margin: auto;
-    height: 23vw;
-    background-color: white;
-    border-radius: 24%;
-    padding: 5vw;
-    filter: invert(95%);
+.icon{
+    height:2.49rem;
+    filter: invert( 100%);
+    color: white;
+    width:auto;
 }
 
 .outbutton{
-    border-radius: 24%;
-    padding: 4vw;
-    background-color: var(--primary);
-    margin-bottom: 2vh;
-    height: 33vw;
+    font-family: "Material Icons";
+    color: white;
+    font-size: 2.49rem;
+    height: auto;
+    background-color: var(--primary-dark);
+    border-radius: 15%;
+    padding: 5vw;
 }
 
-#exception{
-    background-color: black;
-    filter: invert(5%);
-    padding: 0;
-    width: 33vw;
-    height: 33vw;
+#iconwrapper p{
+    color: #5c5c5c;
+    margin-top: 1vh;
 }
