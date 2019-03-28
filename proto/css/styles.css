@@ -62,9 +62,6 @@ table {
     border-spacing: 0;
 }
 
-
-
-
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: .0000025rem;
@@ -82,15 +79,16 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-bottom: 4vh;
 }
 
 header h1 {
     font-size: 1.4rem;
     color: white;
-    padding-left: 15px;
+    padding-left: 24px;
 }
 
-header img{
+header img {
     height: 63%;
     filter: invert(100%);
     margin-left: auto;
@@ -108,9 +106,26 @@ header img{
 .button {
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
-    border-radius: 4px;
     letter-spacing: .0892857143em;
     text-transform: uppercase;
     border-style: none;
     box-shadow: var(--buttonShadow);
+}
+
+.cornerButton {
+    position: absolute;
+    font-size: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 57px;
+    height: 57px;
+    padding: auto;
+    font-family: "Material Icons";
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    bottom: 10vh;
+    right: 7vh;
 }

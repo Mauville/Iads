@@ -1,3 +1,33 @@
 @media only screen and (max-width: 600px) {
-
+    .device {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-template-rows: 30% 70%;
+        grid-gap: 0;
+        align-items: center;
+        max-width: 82%;
+        margin: 3vh auto;
+        background-color: var(--primary);
+        border-radius: 15px;
+        box-shadow: var(--buttonShadow);
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+    .device img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 70%;
+        justify-self: center;
+    }
+    h2 {
+        font-size: 1.29rem;
+        color: white;
+    }
+    h3 {
+        color: whitesmoke;
+    }
+    h3 span {
+        color: greenyellow;
+        font-family: "Lucida Console", Monaco, monospace;
+    }
 }
