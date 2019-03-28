@@ -4,6 +4,7 @@
         grid-template-columns: 30% 65%;
         grid-template-rows: 30% 70%;
         grid-gap: 0;
+        min-height: 85px;
         align-items: center;
         max-width: 82%;
         margin: 3vh auto;
@@ -20,7 +21,7 @@
         justify-self: center;
     }
     h2 {
-        font-size: 1.29rem;
+        font-size: 1.44rem;
         color: white;
     }
     h3 {

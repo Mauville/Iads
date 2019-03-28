@@ -1,4 +1,4 @@
-#iconwrapper{
+#iconwrapper {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
@@ -7,24 +7,29 @@
     place-items: center;
     justify-content: space-between;
     width: 90%;
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
-    margin-top: 17vh;
+    margin-top: 10vh; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#iconwrapper a{
+#iconwrapper a {
     width: auto;
     text-align: center;
     font-size: 1.1rem;
 }
-.icon{
-    height:2.49rem;
+
+.icon {
+    height: 2.49rem;
     filter: invert( 100%);
     color: white;
-    width:auto;
+    width: auto;
 }
 
-.outbutton{
+.outbutton {
     font-family: "Material Icons";
     color: white;
     font-size: 2.49rem;
@@ -34,7 +39,11 @@
     padding: 5vw;
 }
 
-#iconwrapper p{
+#iconwrapper p {
     color: #5c5c5c;
     margin-top: 1vh;
+}
+.img{
+    width: 2.45rem;
+    height: auto;
 }
