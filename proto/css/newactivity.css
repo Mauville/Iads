@@ -1,0 +1,49 @@
+#tittle{
+    font-size: 6vh;
+    margin: auto;
+    text-align: center;
+}
+
+#iconwrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#iconwrapper a{
+    display: grid;
+    width: auto;
+    margin-top: 6vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    text-align: center;
+    font-size: 4vh;
+    text-transform: uppercase;
+}
+
+.icon {
+    width: 23vw;
+    margin: auto;
+    height: 23vw;
+    background-color: white;
+    border-radius: 24%;
+    padding: 5vw;
+    filter: invert(95%);
+}
+
+.outbutton{
+    border-radius: 24%;
+    padding: 4vw;
+    background-color: var(--primary);
+    margin-bottom: 2vh;
+    height: 33vw;
+}
+
+#exception{
+    background-color: black;
+    filter: invert(5%);
+    padding: 0;
+    width: 33vw;
+    height: 33vw;
+}
