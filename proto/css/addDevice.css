@@ -1,0 +1,85 @@
+@media (max-width: 600px) {
+    #wrapper {
+        margin: auto;
+        margin-top: 25%;
+        width: 82%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .device {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-template-rows: 30% 70%;
+        grid-gap: 0;
+        align-items: center;
+        max-width: 82%;
+        margin: 3vh auto;
+        background-color: var(--primary);
+        border-radius: 15px;
+        box-shadow: var(--buttonShadow);
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+    .device img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 70%;
+        justify-self: center;
+    }
+    h2 {
+        font-size: 1.29rem;
+        color: white;
+    }
+    h3 {
+        color: whitesmoke;
+    }
+    h3 span {
+        color: greenyellow;
+        font-family: "Lucida Console", Monaco, monospace;
+    }
+    .button {
+        width: 35%;
+        height: 45px;
+        background-color: var(--good);
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        margin-left: 13vw;
+        box-shadow: var(--buttonShadow);
+    }
+    #bottombutton {
+        background-color: var(--bad);
+        margin-left: unset;
+    }
+    /* Hover is required to go before active */
+    .button:hover {}
+    #bottombutton:hover {}
+    .button:active {
+        background-color: #46f457
+    }
+    #bottombutton:active {
+        background-color: #ff5959
+    }
+    .info{
+        text-align: center;
+        font-size: 1.3rem;
+        opacity: .5;
+        margin-bottom: 6vh;
+    }
+    #bottom{
+        margin-bottom: unset;
+        margin-top: 11vh;
+
+    }
+    form{
+        position: absolute;
+        width: 100%;
+        bottom: 4vh;
+        justify-content: center;
+        margin: 7vh auto;
+        display: flex;
+    }
+
+
+}
