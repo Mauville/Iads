@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Devices | Knocki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/addDevice.css">
+    <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html">
+            <p class="materialIcon" id="back">arrow_back</p>
+        </a>
+        <h1>Pair New Knocki </h1>
+        <p class="materialIcon" id="more">more_vert</p>
+    </header>
+
+    <div id="wrapper">
+        <div class="info">
+            <p>The following devices have been found:</p>
+        </div>
+
+        <section>
+            <a href="" class="device">
+                <img src="img/white.png" alt="knocki">
+                <h2>Unpaired Knocki</h2>
+                <h3>Serial: <span>23c8jp0dz</span></h3>
+            </a>
+        </section>
+        <div id="bottom" class="info">
+            <p>Do you wish to pair this device?</p>
+        </div>
+    </div>
+    <form action="">
+        <input type="button" class="button" value="No" id="bottombutton" onclick="location.href='home.html';">
+        <input type="button" value="Yes" class="button" onclick="location.href='homeADD.html';">
+    </form>
+</body>
+
+</html>
