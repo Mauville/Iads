@@ -14,7 +14,7 @@
         grid-gap: 0;
         align-items: center;
         max-width: 82%;
-        min-height: 85px;
+        min-height: 12vh;
         margin: 3vh auto;
         background-color: var(--primary);
         border-radius: 15px;
