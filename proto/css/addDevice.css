@@ -27,6 +27,8 @@
         grid-row-end: 3;
         height: 70%;
         justify-self: center;
+        max-width: 9vh;
+        max-height: 9vh;
     }
     h2 {
         font-size: 1.29rem;
