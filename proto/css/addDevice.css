@@ -13,7 +13,6 @@
         grid-template-rows: 30% 70%;
         grid-gap: 0;
         align-items: center;
-        max-width: 82%;
         min-height: 12vh;
         margin: 3vh auto;
         background-color: var(--primary);
