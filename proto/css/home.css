@@ -1,5 +1,6 @@
 @media (max-width: 600px) {
     .device {
+        position: relative;
         display: grid;
         grid-template-columns: 30% 65%;
         grid-template-rows: 30% 70%;
@@ -23,12 +24,21 @@
     h2 {
         font-size: 1.44rem;
         color: white;
+        margin-top: .6vh;
     }
     h3 {
         color: whitesmoke;
+        margin-bottom: 1vh;
     }
     h3 span {
         color: greenyellow;
         font-family: "Lucida Console", Monaco, monospace;
+    }
+    .device p{
+        position: absolute;
+        font-family: "Material Icons";
+        color: #e7e7e7;
+        font-size: 1.6rem;
+        right: 5vw;
     }
 }

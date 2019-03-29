@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
     .activity {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 10% 60% 30%;
         grid-gap: 0;
         align-items: center;
         max-width: 82%;
@@ -20,12 +20,19 @@
     }
     h3 {
         font-family: 'Roboto', sans-serif;
-        color: rgb(0, 0, 0, .35);
-        background-color: rgba(211, 211, 211, .6);
+        color: rgb(0, 0, 0, .51);
+        background-color: rgba(233, 233, 233, 0.8);
         margin-right: 22px;
         border-radius: 5%;
         text-align: center;
         font-size: 1.56rem;
         font-weight: 900;
+    }
+    .activity p{
+        font-family: "Material Icons";
+        color: white;
+        font-size: 1.2rem;
+        padding-left: 5vw;
+
     }
 }

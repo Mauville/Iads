@@ -1,10 +1,17 @@
 @media (max-width: 600px) {
     #wrapper {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
         margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 21px;
         border: 4px solid #bcbcbc;
         height: 70vh;
+        width: 80%;
     }
     .button {
         width: 30%;
@@ -17,11 +24,12 @@
         box-shadow: var(--buttonShadow);
     }
     #middlebutton {
+        margin-left: unset;
         background-color: unset;
         box-shadow: none;
         color: var(--primary-dark);
-        margin-left: unset;
-        font-kerning: 1;
+        bottom: 11vh;
+        visibility: hidden;
     }
     #bottombutton {
         background-color: var(--bad);
@@ -34,5 +42,18 @@
         justify-content: center;
         margin-top: 7vh auto 0 auto;
         display: flex;
+    }
+    #advice{
+        font-family: "Roboto" sans-serif;
+        font-size: 1.6rem;
+        color: #bcbcbc;
+        margin-bottom: 13vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+    .info p{
+        font-size: 3.6rem;
+        color: #aaa;
+        margin-top: 2vh;
     }
 }
