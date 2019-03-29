@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    width: 20%;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Assistant', sans-serif;
+}
+
+#color1 {
+    width: 100%;
+    background-color: #000;
+    height: 51px;
+    left: 0;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+#color1 h1 {
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    padding: 12px 0;
+    font-style: oblique;
+    font-weight: 600;
+    display: inline-block;
+}
+
+#logo {
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 3px;
+}
+
+#color2 {
+    width: 100%;
+    background-color: #233237;
+    padding: 16px 0px;
+    left: 0;
+    top: 51px;
+    position: sticky;
+}
+
+#menu {
+    width: 100%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+#menu a {
+    color: white;
+}
+
+.hhh {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hh {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#last {
+    padding-right: 0;
+}
+
+#brg {
+    display: none;
+}
+
+.titles {
+    text-align: center;
+    font-size: 9vh;
+    font-weight: 600;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+}
+
+#first {
+    margin-top: 10px;
+    background-color: transparent;
+    font-size: 5vh;
+}
+
+#Carla {
+    margin: 50px auto 0px auto;
+    height: 340px;
+    width: 1263px;
+}
+
+#Carla img {
+    top: 4px;
+    width: auto;
+    height: 280px;
+    float: right;
+    margin: 20px 230px 0px 0px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#textC {
+    float: left;
+    margin-left: 130px;
+    padding: 30px;
+    background-color: white;
+    width: 340px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#textC h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#textC p {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.first {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+iframe {
+    width:560px;
+    height:315px;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titles {
+    padding: 5vh;
+}
+
+@media (max-width: 980px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .brgmenu {
+        display: none;
+    }
+    .hhh {
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    .hh {
+        margin: auto;
+        padding-top: 3vh;
+        font-size: 3vh;
+    }
+    #color2 {
+        display: flex;
+        align-content: center;
+        height: auto;
+        top: 6vh;
+        padding: 0;
+    }
+    #color1 {
+        height: 6vh;
+    }
+    #color1 h1 {
+        font-size: 4vh;
+        padding: 1vh 0;
+    }
+    #logo {
+        width: 5vh;
+        height: 5vh;
+        margin-left: 2vh;
+    }
+    #brg {
+        display: block;
+        width: 4vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .titles {
+        padding: 4vh 4vw;
+    }
+    #textC {
+        float: unset;
+        margin-left: auto;
+        margin-top: unset;
+        margin-right: auto;
+    }
+    #Carla {
+        margin: 4vh auto;
+        height: auto;
+        width: auto;
+    }
+    #Carla img {
+        max-width: 75vw;
+        width: unset;
+        display: block;
+        background-color: #233237;
+        margin-left: auto;
+        margin-right: auto;
+        float: unset;
+    }
+    iframe {
+        margin: 13vh auto 0 auto;
+        display: block;
+    }
+    #first {
+        margin-top: 27px;
+        background-color: transparent;
+        font-size: 3vh;
+    }
+}
