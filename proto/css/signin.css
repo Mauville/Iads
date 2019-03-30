@@ -13,6 +13,7 @@
 }
 
 .title{
+    color: #999999;
     margin-top: 1vh;
     font-size: 1.4rem;
 }
@@ -35,6 +36,7 @@
 
 #termswrap{
     margin-top: 6vh;
+    color: #999999;
     display: flex;
 }
 
