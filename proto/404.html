@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/load.css">
+    <link rel="stylesheet" href="css/three-dots.css">
+    <title>Loading... | Knocki</title>
+    <meta http-equiv='refresh' content='2; URL=home.html'>
+</head>
+
+<body>
+    <div id="wrapper">
+        <p id="catchphrase-1">"Knock 'em out!"</p>
+        <p id="catchphrase-2">"Knock on wood"</p>
+        <p id="catchphrase-3">"Kuwabara, kuwabara"</p>
+        <p id="catchphrase-4">"Opportunity doesn't knock twice"</p>
+        <p id="catchphrase-5">Knock! Knock!</p>
+
+        <hr>
+        <i id="loading">Loading&mldr;</i>
+        <!-- <div class="dot-flashing"></div> -->
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var id = Math.floor(Math.random() * 4) + 1;
+        var fullid = "#catchphrase-" + id;
+        $(fullid).css("display", "initial")
+    });
+
+</script>
+
+</html>
