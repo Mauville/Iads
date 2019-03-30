@@ -16,12 +16,12 @@
 
 <body>
     <div id="wrapper">
-        <!-- <p id="catchphrase-1">"Knock 'em out!"</p> -->
-        <p id="catchphrase-2" >"Knock on wood"</p>
-        <!-- <p id="catchphrase-3" >"Kuwabara, kuwabara"</p>
-        <p id="catchphrase-4" >"Opportunity doesn't knock twice"</p>
-        <p id="catchphrase-5" >Knock! Knock!</p> -->
-       
+        <p id="catchphrase-1">"Knock 'em out!"</p>
+        <p id="catchphrase-2">"Knock on wood"</p>
+        <p id="catchphrase-3">"Kuwabara, kuwabara"</p>
+        <p id="catchphrase-4">"Opportunity doesn't knock twice"</p>
+        <p id="catchphrase-5">Knock! Knock!</p>
+
         <hr>
         <i id="loading">Loading&mldr;</i>
         <!-- <div class="dot-flashing"></div> -->
@@ -29,5 +29,13 @@
 </body>
 
 <script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var id = Math.floor(Math.random() * 4) + 1;
+        var fullid = "#catchphrase-" + id;
+        $(fullid).css("display", "initial")
+    });
+
+</script>
 
 </html>

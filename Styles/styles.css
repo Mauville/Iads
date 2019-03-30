@@ -198,7 +198,7 @@ a{
 #textC p{
     margin-top: 20px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 #Oscar{
@@ -236,7 +236,7 @@ a{
 #textO p{
     margin-top: 20px;
     font-size: 35px;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -275,7 +275,7 @@ a{
 #textI p{
     margin-top: 20px;
     font-size: 35px;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -314,7 +314,7 @@ a{
 #textA p{
     margin-top: 20px;
     font-size: 35px;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 980px){
