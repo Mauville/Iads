@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Prototype | IADS</title>
-        <link href="Styles/userTests.css" rel="stylesheet">
-        <link href="Images/logo3.png" rel="shortcut icon" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet"> 
-    </head>
-    <body>
-        <a href="index.html" id="color1">
-            <h1>IADS</h1>
-            <img src="Images/logo3.png" id="logo">
-        </a>
 
-        <div id="color2">
-            <div id = "menu">
-               <img src="Images/menu.svg" id="brg">
-                <div class="brgmenu">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype | IADS</title>
+    <link href="Styles/userTests.css" rel="stylesheet">
+    <link href="Images/logo3.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+</head>
+
+<body>
+    <a href="index.html" id="color1">
+        <h1>IADS</h1>
+        <img src="Images/logo3.png" id="logo">
+    </a>
+
+    <div id="color2">
+        <div id="menu">
+            <img src="Images/menu.svg" id="brg">
+            <div class="brgmenu">
                 <ul class="hhh">
                     <li class="hh"><a href="index.html">About us</a></li>
                     <li class="hh"><a href="personas.html">Personas profiles</a></li>
@@ -25,17 +27,29 @@
                     <li class="hh"><a href="userTests.html">User Tests</a></li>
                     <li class="hh" id="last"> <a href="proto/index.html" target="_blank">High prototype</a></li>
                 </ul>
-                </div>
-            </div></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Dtm12vOLItU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </body>
-    
-        <script src="js/jquery.min.js"></script>
-    <script>
-        
-    $('#brg').on('click', function(){
-          $('.brgmenu').slideToggle();
-      })
-        
-    </script>
+            </div>
+        </div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dtm12vOLItU" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <aside>
+        <h2>Remarks:</h2>
+        <ul>
+            <li>The button at the top in the input code screen confuses people. Meaning is not clear.</li>
+            <li>After adding a new device, people cannot interact with the device.</li>
+            <li>The cognitive workload on the activity selection screen is too much.</li>
+            <li>People seemed to be interested more by the novelty of the Marvel platform than the prototype itself</li>
+        </ul>
+    </aside>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+    $('#brg').on('click', function () {
+        $('.brgmenu').slideToggle();
+    })
+
+</script>
+
 </html>
