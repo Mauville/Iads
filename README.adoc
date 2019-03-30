@@ -16,7 +16,7 @@ image::https://github.com/Mauville/Iads/blob/master/Images/logo3.png?raw=true[DE
 
 == Contributors (aside from repo owner)
 
-* Ángel Heredia Vázquez
+* Ángel Heredia Vázquez with the help of https://github.com/Mauville/AutoGit[AutoGit]
 
 == For Recruiters
 === Concepts Applied
