@@ -1,0 +1,36 @@
+=  Landing Site and Knocki (R) WebApp
+
+
+__"Opportunity doesn't knock twice"__
+
+'''
+
+This is the landing site of a fictitious company named "IADS" and a WebApp to control a https://knocki.com[Knocki(R)] device.
+
+These were built from the ground up, applying User Design conventions, the landing site serves as a logbook of all of these.
+
+== Gallery
+
+image::https://github.com/Mauville/Iads/blob/master/Images/logo3.png?raw=true[DEMO,200,200]
+
+
+== Contributors (aside from repo owner)
+
+* Ángel Heredia Vázquez
+
+== For Recruiters
+=== Concepts Applied
+
+* Web Responsiveness
+* Personas
+* Benchmarking
+* Prototyping
+* Think Aloud Evaluation Techniques
+* Material Design
+* Local Storage
+* JQuery
+
+
+== Legal Disclaimer
+We are in no way, related or associated with the Knocki(R) device and trademark nor Swan Solutions Inc. +
+This was an educative design practice done under the Fair Use Act. No copyright infringement is intended.
