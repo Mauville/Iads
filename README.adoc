@@ -1,5 +1,5 @@
-=  Landing Site and Knocki (R) WebApp
-
+﻿=  Landing Site and Knocki (R) WebApp
+:imagesdir: Images/
 
 __"Opportunity doesn't knock twice"__
 
@@ -7,16 +7,23 @@ __"Opportunity doesn't knock twice"__
 
 This is the landing site of a fictitious company named "IADS" and a WebApp to control a https://knocki.com[Knocki(R)] device.
 
-These were built from the ground up, applying User Design conventions, the landing site serves as a logbook of all of these.
+These were built from the ground up, applying User Design Conventions and building up from Material Design guidelines. 
+The landing site is a logbook of the techniques applied.
 
 == Gallery
 
 image::https://github.com/Mauville/Iads/blob/master/Images/logo3.png?raw=true[DEMO,200,200]
+image::Screenshot(46).png[DEMO,300,200]
+image::Screenshot(47).png[DEMO,300,200]
+image::Screenshot(48).png[DEMO,300,200]
+image::Screenshot(49).png[DEMO,300,200]
+image::Screenshot(50).png[DEMO,300,200]
 
 
-== Contributors (aside from repo owner)
+== Contributors 
 
-* Ángel Heredia Vázquez with the help of https://github.com/Mauville/AutoGit[AutoGit]
+* Ãngel Heredia VÃ¡zquez with the help of https://github.com/Mauville/AutoGit[AutoGit]
+* Repo Owner
 
 == For Recruiters
 === Concepts Applied
