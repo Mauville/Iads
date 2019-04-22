@@ -1,0 +1,42 @@
+= Project Notes
+:source-highlighter: pygments
+
+
+== basic storage structure
+
+[source, JSON]
+----
+usrlist = {
+    usrname = {
+        password = '',
+        email = '',
+        knocki = {
+            dev1 = {
+                name = '',
+                status = '',
+                location = ''
+                activities = {
+                    activity1 = {
+                        name = "",
+                        knocks = "",
+                        data1 = "",
+                        data2 = ""
+                    }
+                }
+            },
+            dev2 = {
+                name = '',
+                status = '',
+                location = ''
+            },
+            dev3 = {
+                name = '',
+                status = '',
+                location = ''
+            }
+        }
+    },
+    usr = {},
+    usr = {}
+}
+----
