@@ -12,12 +12,8 @@ The landing site is a logbook of the techniques applied.
 
 == Gallery
 
-image::https://github.com/Mauville/Iads/blob/master/Images/logo3.png?raw=true[DEMO,200,200]
-image::Screenshot(46).png[DEMO,300]
-image::Screenshot(47).png[DEMO,300]
-image::Screenshot(48).png[DEMO,300]
-image::Screenshot(49).png[DEMO,300]
-image::Screenshot(50).png[DEMO,300]
+image::Screenshot(46).png[DEMO,300] image::Screenshot(47).png[DEMO,300] image::Screenshot(48).png[DEMO,300]
+image::Screenshot(49).png[DEMO,300] image::Screenshot(50).png[DEMO,300]
 
 
 == Contributors 
