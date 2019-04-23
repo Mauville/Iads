@@ -28,3 +28,5 @@ function checkAuth(username, password) {
     }
     return state;
 }
+// TODO function to listen for button click
+//TODO remove link and direct to page only on approval from function

@@ -7,36 +7,32 @@
 [source, JSON]
 ----
 usrlist = {
-    usrname = {
+    usr= {
+        username = "",
         password = '',
         email = '',
         knocki = {
-            dev1 = {
-                name = '',
-                status = '',
-                location = ''
-                activities = {
-                    activity1 = {
-                        name = "",
-                        knocks = "",
-                        data1 = "",
-                        data2 = ""
-                    }
-                }
+            keys={1111,2222,3333,4444}
             },
-            dev2 = {
-                name = '',
-                status = '',
-                location = ''
-            },
-            dev3 = {
-                name = '',
-                status = '',
-                location = ''
-            }
         }
     },
     usr = {},
     usr = {}
+}
+
+knockilist = {
+    1111 = {
+        name = '',
+        status = '',
+        location = ''
+        activities = {
+            activity1 = {
+                name = "",
+                knocks = "",
+                data1 = "",
+                data2 = ""
+            }
+        }
+    }
 }
 ----
