@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,36 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/load.css">
     <link rel="stylesheet" href="css/three-dots.css">
-    <title>Loading... | Knocki</title>
-    <meta http-equiv='refresh' content='2; URL=home.html'>
+    <title>About | Knocki</title>
 </head>
 
 <body>
-    <div id="wrapper">
-        <p id="catchphrase-1">"Knock 'em out!"</p>
-        <p id="catchphrase-2">"Knock on wood"</p>
-        <p id="catchphrase-3">"Kuwabara, kuwabara"</p>
-        <p id="catchphrase-4">"Opportunity doesn't knock twice"</p>
-        <p id="catchphrase-5">Knock! Knock!</p>
-
-        <hr>
-        <i id="loading">Loading&mldr;</i>
-        <!-- <div class="dot-flashing"></div> -->
+  <header>
+    <a href="home.html">
+      <p class="materialIcon" id="back">arrow_back</p>
+    </a>
+    <h1>About</h1>
+  </header>
+    <div>
+        <h1 id="this">Knocki Web App</h1>
+        <img src="/img/knocki.png" alt="" id="knocki">
+        <h2>"Doing things the hard way"</h2>
+        <img src="/img/dtthw.jpg" alt="" id="v">
+        <h3>2019</h3>
+        <details>
+            <summary>Legal Disclaimer</summary>
+            <p>We are in no way, related or associated with the Knocki® device and/or trademark nor Swan Solutions Inc.
+            </p>
+            <p>This was an educative design practice done under the Fair Use Act. No copyright infringement of any kind
+                is
+                intended.</p>
+        </details>
     </div>
 </body>
 
 <script src="js/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var id = Math.floor(Math.random() * 4) + 1;
-        var fullid = "#catchphrase-" + id;
-        $(fullid).css("display", "initial")
-    });
-
-</script>
 
 </html>

@@ -43,4 +43,25 @@
         font-size: 1.6rem;
         right: 5vw;
     }
+    #burger{
+        display: flex;
+        display: none;
+        position: absolute;
+        top: 1vh;
+        right: 1vh;
+        z-index: 1000;
+        flex-direction: column;
+        width: 30%;
+        padding-left: 3vw;
+        font-size: 1.44rem;
+        background-color: white;
+        border-radius: 4px;
+    }
+    #burger p{
+        padding: 3vh 0;
+    }
+    #burger a{
+        text-decoration: none;
+        color: black;
+    }
 }

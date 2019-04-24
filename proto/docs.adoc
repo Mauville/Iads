@@ -15,6 +15,9 @@ usrlist = {
             keys={1111,2222,3333,4444}
             },
         }
+        activity = {
+            keys={a111,a222,a333}
+        }
     },
     usr = {},
     usr = {}
@@ -25,14 +28,14 @@ knockilist = {
         name = '',
         status = '',
         location = ''
-        activities = {
-            activity1 = {
-                name = "",
-                knocks = "",
-                data1 = "",
-                data2 = ""
-            }
         }
     }
 }
+activitylist = {
+    activity1 = {
+        name = "",
+        knocks = "",
+        data1 = "",
+        data2 = ""
+        }
 ----

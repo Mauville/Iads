@@ -7,6 +7,8 @@
     <title>My Devices | Knocki</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/addDevice.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/proto/js/addDevice.js"></script>
     <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,7 +22,6 @@
             <p class="materialIcon" id="back">arrow_back</p>
         </a>
         <h1>Pair New Knocki </h1>
-        <p class="materialIcon" id="more">more_vert</p>
     </header>
 
     <div id="wrapper">
@@ -32,17 +33,28 @@
             <a href="" class="device">
                 <img src="img/white.png" alt="knocki">
                 <h2>Unpaired Knocki</h2>
-                <h3>Serial: <span>23c8jp0dz</span></h3>
+                <h3>Serial: <span id="key">-</span></h3>
             </a>
         </section>
         <div id="bottom" class="info">
             <p>Do you wish to pair this device?</p>
         </div>
     </div>
-    <form action="">
+    <form action="" id="buttons">
         <input type="button" class="button" value="No" id="bottombutton" onclick="location.href='home.html';">
-        <input type="button" value="Yes" class="button" onclick="location.href='homeADD.html';">
+        <input type="button"  id="confirm" value="Yes" class="button" onclick="">
     </form>
+
+    <div id="popup">
+        <p>Where is this knocki going to be?</p>
+        <form action="" method="get">
+            <input class="form" type="text" placeholder="Door, Table, Bureau...">
+        </form>
+        <form action="" method="get">
+            <input type="button" value="Confirm" class="button" onclick="location.href='home.html';">
+        </form>
+    </div>
+
 </body>
 
 </html>

@@ -63,18 +63,17 @@
     #bottombutton:active {
         background-color: #ff5959
     }
-    .info{
+    .info {
         text-align: center;
         font-size: 1.3rem;
         opacity: .5;
         margin-bottom: 6vh;
     }
-    #bottom{
+    #bottom {
         margin-bottom: unset;
         margin-top: 11vh;
-
     }
-    form{
+    #buttons {
         position: absolute;
         width: 100%;
         bottom: 4vh;
@@ -82,6 +81,27 @@
         margin: 7vh auto;
         display: flex;
     }
-
-
+    #popup {
+        position: absolute;
+        display: none;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border-radius: 10px;
+        height: 24vh;
+        padding-left: 10%;
+        width: 69vw;
+    }
+    #popup form {
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+    #popup form .button {
+        padding: 10px;
+        width: 46%;
+    }
+    #popup p {
+        padding: 10px;
+    }
 }
