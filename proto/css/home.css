@@ -64,4 +64,14 @@
         text-decoration: none;
         color: black;
     }
+    #burger #maker{
+        display: block;
+    }
+    #burger #maker a{
+        text-decoration: none;
+    }
+    #redtext{
+        color: red;
+    }
+
 }

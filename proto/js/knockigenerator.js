@@ -8,7 +8,7 @@ function createDevice (color, location){
       <img src="img/${color}.png" alt="knocki">
       <h2>${location}</h2>
       <h3>Status: <span>ONLINE</span></h3>
-      <p>edit</p>
+      <p>settings</p>
     </a>
     `
     return code;
