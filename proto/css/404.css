@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+    div {
+        position: absolute;
+        display: flex;
+        padding-left: 13vw;
+        padding-right: 13vw;
+        top: 11vh;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        
+    }
+
+    #this{
+        font-family: "Roboto";
+        margin-bottom: 4vh;
+        font-weight: 900;
+        font-size: 7vh;
+    }
+    #knocki{
+        height: auto;
+        width: 70%;
+        margin-bottom: 4vh;
+    }
+    h2{
+        font-size: 3vh;
+        margin-bottom: 4vh;
+    }
+    #v{
+        height: auto;
+        width: 50%;
+        margin-bottom: 4vh;
+    }
+    h3{
+        font-size: 3vh;
+        font-weight: bold;
+        margin-bottom: 4vh;
+    }
+    sup{
+        vertical-align: super;
+        font-size: 1.45rem;
+    }
+}
