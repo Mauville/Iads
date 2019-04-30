@@ -54,41 +54,37 @@
     <a href="activities.html" class="imagelink">
       <img src="img/white.png" alt="knocki">
     </a>
-      <h2>Living Room</h2>
-      <h3>Status: <span>ONLINE</span></h3>
-      <p class="wheel1">settings</p>
+    <h2>Living Room</h2>
+    <h3>Status: <span>ONLINE</span></h3>
+    <p class="wheel">settings</p>
+    <div id="set1">
+      <p><a href="index.html">Activities</a></p>
+      <!-- user login should be deleted from LS  -->
+      <p><a href="404.html">Configuration</a></p>
+      <p id="redtext"><a href="404.html">Delete Device</a></p>
+    </div>
   </section>
 
   <section class="device">
     <a href="activities.html" class="imagelink">
       <img src="img/blacc.png" alt="knocki">
     </a>
-      <h2>Bedroom</h2>
-      <h3>Status: <span>ONLINE</span></h3>
-      <p class="wheel2">settings</p>
-  </section>
-
-  <div id="set1">
-      <p><a href="index.html">Activities</a></p>
+    <h2>Bedroom</h2>
+    <h3>Status: <span>ONLINE</span></h3>
+    <p class="wheel">settings</p>
+    <div id="set1">
+      <p><a href="404.html">Activities</a></p>
       <!-- user login should be deleted from LS  -->
       <p><a href="404.html">Configuration</a></p>
       <p id="redtext"><a href="404.html">Delete Device</a></p>
     </div>
+  </section>
+
 
   <a href="addDevice.html" class="cornerButton">add</a>
 </body>
 
 <script>
-  $('.wheel1').on('click', function(){
-    $('#set1').css('top', '38vw');    
-    $('#set1').toggle();
-  })
-
-  $('.wheel2').on('click', function(){
-    $('#set1').css('top', '66vw');
-    $('#set1').toggle();
-  })
-
 </script>
 
 </html>
