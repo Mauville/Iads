@@ -8,11 +8,7 @@ $(document).ready(function () {
 
 
     var tot = 0;
-    var tot2 = 0;
-    var pattern = "";
-    var pattern2 = "";
-
-    var touchArea = document.getElementById('wrapper');
+    var touchArea = document.getElementById('#wrapper');
     var myRegion = ZingTouch.Region(touchArea);
 
     var gest = new ZingTouch.Tap({
@@ -40,5 +36,4 @@ $(document).ready(function () {
         }
 
     });
-    }
-}
+});
