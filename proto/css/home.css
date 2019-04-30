@@ -36,14 +36,20 @@
         color: greenyellow;
         font-family: "Lucida Console", Monaco, monospace;
     }
-    .device p{
+    .device p {
         position: absolute;
         font-family: "Material Icons";
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         color: #e7e7e7;
         font-size: 1.6rem;
         right: 5vw;
     }
-    #burger{
+    #burger {
         display: flex;
         display: none;
         position: absolute;
@@ -57,21 +63,20 @@
         background-color: white;
         border-radius: 4px;
     }
-    #burger p{
+    #burger p {
         padding: 3vh 0;
     }
-    #burger a{
+    #burger a {
         text-decoration: none;
         color: black;
     }
-    #burger #maker{
+    #burger #maker {
         display: block;
     }
-    #burger #maker a{
+    #burger #maker a {
         text-decoration: none;
     }
-    #redtext{
+    #redtext {
         color: red;
     }
-
 }
