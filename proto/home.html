@@ -50,30 +50,45 @@
     <p><a href="404.html">About</a></p>
   </div>
 
-  <section>
-    <a href="activities.html" class="device">
+  <section class="device">
+    <a href="activities.html" class="imagelink">
       <img src="img/white.png" alt="knocki">
+    </a>
       <h2>Living Room</h2>
       <h3>Status: <span>ONLINE</span></h3>
-      <p>settings</p>
-    </a>
+      <p class="wheel1">settings</p>
   </section>
-  <section>
-    <a href="activities.html" class="device">
+
+  <section class="device">
+    <a href="activities.html" class="imagelink">
       <img src="img/blacc.png" alt="knocki">
+    </a>
       <h2>Bedroom</h2>
       <h3>Status: <span>ONLINE</span></h3>
-      <p>settings</p>
-    </a>
-    <div id="burger maker">
+      <p class="wheel2">settings</p>
+  </section>
+
+  <div id="set1">
       <p><a href="index.html">Activities</a></p>
       <!-- user login should be deleted from LS  -->
       <p><a href="404.html">Configuration</a></p>
       <p id="redtext"><a href="404.html">Delete Device</a></p>
     </div>
-  </section>
 
   <a href="addDevice.html" class="cornerButton">add</a>
 </body>
+
+<script>
+  $('.wheel1').on('click', function(){
+    $('#set1').css('top', '20vh');    
+    $('#set1').toggle();
+  })
+
+  $('.wheel2').on('click', function(){
+    $('#set1').css('top', '36vh');
+    $('#set1').toggle();
+  })
+
+</script>
 
 </html>
