@@ -15,14 +15,14 @@
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
     }
-    .device img {
+    .device img, .imagelink {
         grid-row-start: 1;
         grid-row-end: 3;
-        height: 70%;
         justify-self: center;
         max-height: 9vh;
         max-width: 9vh;
     }
+    
     h2 {
         font-size: 1.44rem;
         color: white;
@@ -36,7 +36,7 @@
         color: greenyellow;
         font-family: "Lucida Console", Monaco, monospace;
     }
-    .device p {
+    .wheel1, .wheel2{
         position: absolute;
         font-family: "Material Icons";
         -webkit-touch-callout: none;
@@ -63,10 +63,33 @@
         background-color: white;
         border-radius: 4px;
     }
+<<<<<<< HEAD
     #burger p {
         padding: 3vh 0;
     }
     #burger a {
+=======
+
+    #set1{
+        display: flex;
+        display: none;
+        position: absolute;
+        top: 38vw;
+        right: 2vh;
+        z-index: 1000;
+        flex-direction: column;
+        width: 30%;
+        padding-left: 5vw;
+        font-size: 0.9rem;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    #burger p, #set1 p{
+        padding: 3vh 0;
+    }
+    #burger a, #set1 a{
+>>>>>>> a43ed8a03c5c665d11edeccf29ba4b34449ce1c6
         text-decoration: none;
         color: black;
     }
@@ -76,7 +99,16 @@
     #burger #maker a {
         text-decoration: none;
     }
+<<<<<<< HEAD
     #redtext {
+=======
+
+    #maker{
+display: none
+    }
+
+    #redtext{
+>>>>>>> a43ed8a03c5c665d11edeccf29ba4b34449ce1c6
         color: red;
     }
 }
