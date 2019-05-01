@@ -13,6 +13,18 @@
         height: 70vh;
         width: 80%;
     }
+    .dot, .hyphen {
+        background-color: rgb(122, 122, 122);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 18px 5px 0 5px;
+    }
+    .hyphen {
+        width: 38px;
+        border-radius: 4px;
+    }
     .button {
         width: 30%;
         height: 45px;
@@ -43,7 +55,7 @@
         margin-top: 7vh auto 0 auto;
         display: flex;
     }
-    #advice{
+    #advice {
         font-family: "Roboto" sans-serif;
         font-size: 1.6rem;
         color: #bcbcbc;
@@ -51,13 +63,12 @@
         padding-left: 6vw;
         padding-right: 6vw;
     }
-    .info p{
+    .info p {
         font-size: 3.6rem;
         color: #aaa;
         margin-top: 2vh;
     }
-    #store{
+    #store {
         text-decoration: underline;
     }
-
 }
