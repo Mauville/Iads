@@ -6,10 +6,10 @@ $(document).ready(function () {
     var hyphen = "<div class='hyphen'></div>";
 
 
-
     var tot = 0;
-    var touchArea = document.getElementById('#wrapper');
+    var touchArea = document.getElementById('wrapper');
     var myRegion = ZingTouch.Region(touchArea);
+    var pattern = ""
 
     var gest = new ZingTouch.Tap({
         maxDelay: 2000,
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
         tot++;
 
-        if (tot <= 10) {
+        if (tot <= 5) {
             if (num < 170) {
                 //tap
                 $('.store').append(dot);
@@ -34,6 +34,16 @@ $(document).ready(function () {
                 pattern += "h";
             }
         }
+        console.log(pattern)
 
+    });
+    $("#taparea").on("tap", function (e) {
+        e.preventDefault();
+        $('#gesture').append(dot);
+    });
+
+    $("#taparea").on("taphold", function (e) {
+        e.preventDefault();
+        $('#gesture').append(hyphen);
     });
 });
