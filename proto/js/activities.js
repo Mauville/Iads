@@ -27,20 +27,3 @@ if(localStorage.getItem('total-activities')==null){
 function show_activities(){
 
 }
-
-function add_activity(activity1){
-    localStorage.setItem('total-activities', JSON.parse(localStorage.getItem('total-activities'))+1);
-
-    let log_user = JSON.parse(localStorage.getItem('logged_user'));
-    let knocki = JSON.parse(localStorage.getItem(log_user.knocki_used));
-    
-    knocki.activities = knocki.activities + 1;
-
-    let activity = {
-        owner: knocki.owner,
-        place: knocki.place,
-        activity: activity1
-    }
-
-    localStorage.setItem('activity-'+ localStorage.getItem('total-activities'), JSON.stringify(activity));
-}

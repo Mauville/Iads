@@ -47,3 +47,27 @@ $(document).ready(function () {
         $('#gesture').append(hyphen);
     });
 });
+
+$('#accept').on('click', function(){
+    let activity = localStorage.getItem('new-activity');
+    add_activity(activity);
+});
+
+function add_activity(activity1){
+    localStorage.setItem('total-activities', JSON.parse(localStorage.getItem('total-activities'))+1);
+
+    let log_user = JSON.parse(localStorage.getItem('logged_user'));
+    let knocki = JSON.parse(localStorage.getItem(log_user.knocki_used));
+    
+    knocki.activities = knocki.activities + 1;
+
+    let activity = {
+        owner: knocki.owner,
+        place: knocki.place,
+        activity: activity1,
+        pattern: ''
+    }
+
+    localStorage.setItem('activity-'+ localStorage.getItem('total-activities'), JSON.stringify(activity));
+    window.location.href = 'activities.html';
+}
