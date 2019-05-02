@@ -30,7 +30,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/home.css">
   <script src="js/jquery.min.js"></script>
-  <script src="js/home.js"></script>
   <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -50,7 +49,7 @@
     <p><a href="404.html">About</a></p>
   </div>
 
-  <section class="device">
+  <section id="knocki1" class="device">
     <a href="activities.html" class="imagelink">
       <img src="img/white.png" alt="knocki">
     </a>
@@ -65,7 +64,7 @@
     </div>
   </section>
 
-  <section class="device">
+  <section id="knocki2" class="device">
     <a href="activities.html" class="imagelink">
       <img src="img/blacc.png" alt="knocki">
     </a>
@@ -80,11 +79,60 @@
     </div>
   </section>
 
+  <section id="knocki3" class="device">
+      <a href="activities.html" class="imagelink">
+        <img src="img/white.png" alt="knocki">
+      </a>
+      <h2>Bedroom</h2>
+      <h3>Status: <span>ONLINE</span></h3>
+      <p class="wheel">settings</p>
+      <div id="set1">
+        <p><a href="404.html">Activities</a></p>
+        <!-- user login should be deleted from LS  -->
+        <p><a href="404.html">Configuration</a></p>
+        <p id="redtext"><a href="404.html">Delete Device</a></p>
+      </div>
+    </section>
+
+    <section id="knocki4" class="device">
+        <a href="activities.html" class="imagelink">
+          <img src="img/blacc.png" alt="knocki">
+        </a>
+        <h2>Bedroom</h2>
+        <h3>Status: <span>ONLINE</span></h3>
+        <p class="wheel">settings</p>
+        <div id="set1">
+          <p><a href="404.html">Activities</a></p>
+          <!-- user login should be deleted from LS  -->
+          <p><a href="404.html">Configuration</a></p>
+          <p id="redtext"><a href="404.html">Delete Device</a></p>
+        </div>
+      </section>
+
+      <section id="knocki5" class="device">
+          <a href="activities.html" class="imagelink">
+            <img src="img/white.png" alt="knocki">
+          </a>
+          <h2>Bedroom</h2>
+          <h3>Status: <span>ONLINE</span></h3>
+          <p class="wheel">settings</p>
+          <div id="set1">
+            <p><a href="404.html">Activities</a></p>
+            <!-- user login should be deleted from LS  -->
+            <p><a href="404.html">Configuration</a></p>
+            <p id="redtext"><a href="404.html">Delete Device</a></p>
+          </div>
+        </section>
+
 
   <a href="addDevice.html" class="cornerButton">add</a>
 </body>
 
+<script src="js/home.js"></script>
 <script>
+  if(localStorage.getItem('logged-user') == 'null'){
+    window.location.href = 'index.html';
+  }
 </script>
 
 </html>

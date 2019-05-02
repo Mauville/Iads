@@ -2,6 +2,7 @@
     .device {
         position: relative;
         display: grid;
+        display: none;
         grid-template-columns: 30% 65%;
         grid-template-rows: 30% 70%;
         grid-gap: 0;

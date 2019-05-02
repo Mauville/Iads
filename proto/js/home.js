@@ -38,3 +38,7 @@ $(document).ready(function () {
     //     $('.wheel').on('click', function () {
     //     })
     // });
+
+    if(localStorage.getItem('total-knockis')==null){
+        localStorage.setItem('total-knockis', 0);
+    }
