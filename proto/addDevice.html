@@ -69,13 +69,22 @@
     <div id="popup">
         <p>Where is this knocki going to be?</p>
         <form action="" method="get">
-            <input class="form" type="text" placeholder="Door, Table, Bureau...">
+            <input id="place1" class="form" type="text" placeholder="Door, Table, Bureau...">
         </form>
         <form action="" method="get">
-            <input type="button" value="Confirm" class="button" onclick="location.href='home.html';">
+            <input id="lastconfirm" type="button" value="Confirm" class="button" >
+            <!--onclick="location.href='home.html';"-->
         </form>
     </div>
 
 </body>
+
+<script src="js/home.js"></script>
+<script>
+    $('#lastconfirm').on('click', function(){
+        var place = $('#place1').val();
+        add_knocki(place);
+    });
+</script>
 
 </html>
