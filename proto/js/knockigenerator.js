@@ -1,5 +1,6 @@
 /** Returns a formatted knocki device html
- * @param An object containing the following strings {location, color}. Color should be either "white" or "blacc"
+ * @param color  "white" or "blacc" to determine the color of the img
+ * @param location  a string to display the place where the knocki is
  * @returns A string containing the html of the added Knocki Device
  */
 function createDevice(color, location) {
@@ -11,7 +12,6 @@ function createDevice(color, location) {
       <p>settings</p>
       <div id="set1">
         <p><a href="404.html">Activities</a></p>
-        <!-- user login should be deleted from LS  -->
         <p><a href="404.html">Configuration</a></p>
         <p id="redtext"><a href="404.html">Delete Device</a></p>
       </div>

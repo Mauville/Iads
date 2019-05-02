@@ -1,7 +1,11 @@
 @media (max-width: 600px) {
+    section{
+        position: relative;
+    }
     .activity {
+        position: relative;
         display: grid;
-        grid-template-columns: 10% 60% 30%;
+        grid-template-columns: 10% 50% 30% 10%;
         grid-gap: 0;
         align-items: center;
         max-width: 82%;
@@ -34,5 +38,61 @@
         font-size: 1.2rem;
         padding-left: 5vw;
 
+    }
+    .cog{
+        font-size: 1.4rem !important; 
+        padding-left: unset !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -khtml-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+    }
+    #set1 {
+        display: flex;
+        display: none;
+        position: absolute;
+        float: right;
+        right: 6vh;
+        top: 1vh;
+        z-index: 1000;
+        flex-direction: column;
+        width: 40%;
+        padding-left: 5vw;
+        font-size: 1.15rem;
+        background-color: white;
+        border-radius: 4px;
+    }
+    #burger p, #set1 p {
+        padding: 3vh 0;
+    }
+    #burger a, #set1 a {
+        text-decoration: none;
+        color: black;
+    }
+    #burger #maker {
+        display: block;
+    }
+    #burger #maker a {
+        text-decoration: none;
+    }
+    #maker {
+        display: none
+    }
+    #redtext a {
+        color: darkred;
+    }
+    .dot, .hyphen {
+        background-color: rgb(122, 122, 122);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 18px 5px 0 5px;
+    }
+    .hyphen {
+        width: 38px;
+        border-radius: 4px;
     }
 }

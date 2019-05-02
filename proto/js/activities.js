@@ -2,19 +2,20 @@
 //TODO fetch info from LS
 //TODO method to refresh knocki things on load
 
-/**
- * Returns a formatted activity html 
- * @param {String} icon A material design ligature name. https://material.io/tools/icons/?style=baseline
- * @param {String} name The name to be displayed in an activity
- * @param {String} code The knock code represented by bullets ("&bull;") and dashes "-"
- */
-function createActivity(icon, name, code) {
-    var code = `<section>
-    <a href="knock.html" class="activity">
-      <p>${icon}</p>
-      <h2>${name}</h2>
-      <h3>${code}</h3>
-    </a>
-    `
-    return code;
-}
+$(document).ready(function () {
+
+    $('.cog').click(function (e) { //button click class name is myDiv
+        e.stopPropagation();
+        console.log($(this).parent().parent());
+        window.wew = $(this).parent().parent().find("#set1")
+        $(window.wew).toggle();
+    })
+
+    $(function () {
+        $(document).click(function () {
+            $('#burger').hide(); //hide the button
+            $(window.wew).hide();
+
+        });
+    });
+}); 
