@@ -118,6 +118,7 @@ $(document).ready(function () {
             place: place1,
             status: 'on',
             number: p.knockis,
+            activities: 0,
             exists: true
         }
 

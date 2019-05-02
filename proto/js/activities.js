@@ -19,3 +19,7 @@ $(document).ready(function () {
         });
     });
 }); 
+
+function show_activities(){
+    
+}
