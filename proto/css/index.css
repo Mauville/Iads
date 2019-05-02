@@ -26,10 +26,20 @@
 	#bottomform {
 		margin-top: 2vh;
 	}
+
+	#error{
+		display: none;
+		text-align: center;
+		margin-top: 4ch;
+		font-size: 1.22rem;
+		color: red;
+		font-weight: 600;
+	}
+
 	.button {
 		width: 50%;
 		height: 45px;
-		margin-top: 8vh;
+		margin-top: 5vh;
 		background-color: var(--primary);
 		font-size: 1.2rem;
 		font-weight: 500;

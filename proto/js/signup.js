@@ -1,32 +1,67 @@
-/**
- * NOT YET READY
- * Adds user to LS with proper data sanitation
- * @param {string} email 
- * @param {string} password 
- * @param {string} username 
- * Returns 0 if successful, 1 if data validation failed
- */
-function addUser(email, password, username) {
-    if (validateData(username) == 0) {
-        var lbObject = store.get("usrlist");
+function añadirusuario(username1, password1, email1, active1){
 
-        store.update(lbObject, function () {
-            //What a mystery this library is. How to access a specific key?
-            lbObject.username =
-                {
-                    email: email,
-                    password: password,
-                    username: username,
-                    knocki : {
-                        name : "example",
-                        status : "Online",
-                        location : "Location"
-                    }
-                };
-        });
-        return 0;
+    var error = false;
+    var counter = JSON.parse(localStorage.getItem('total-usuarios'));
+
+    if(localStorage.getItem('total-usuarios')){
+
+        for(var i=1; i <= localStorage.getItem('total-usuarios'); i++){
+            let comp = JSON.parse(localStorage.getItem('user-'+i));
+                        if(username1 == comp.username){
+                                error = true;
+                                break;
+                        }
+        }
+
+        if(error){
+            $('#username').css('border', '1px solid red');
+            $('#error').text('Username already taken').fadeIn().delay(1500).fadeOut();  
+            console.log('error');
+            error = false;
+    }else{
+            counter++;
+            localStorage.setItem('total-usuarios', counter);
+            
+            let user = {
+                username: username1,
+                email: email1,
+                password: password1,
+                active: active1
+        };
+        localStorage.setItem('user-' + counter, JSON.stringify(user));
+        window.location.href = 'index.html';
     }
-    else{
-        return 1;
-    }
-};
+
+    }else{
+            counter ++;
+            localStorage.setItem('total-usuarios', 1);
+            let user = {
+                    username: username1,
+                    email: email1,
+                    password: password1,
+                    active: active1
+            };
+            localStorage.setItem('user-' + counter, JSON.stringify(user));
+            window.location.href = 'index.html';
+}
+}
+
+function verifyuser(username, password){
+
+    var comp = 0;
+    var totusers = JSON.parse(localStorage.getItem('total-usuarios'));
+        for(var j = 1; j <= totusers; j++){
+            let persona = JSON.parse(localStorage.getItem('user-'+j));
+        if((persona.username == username)&&(persona.password == password)){
+                comp = 1;
+                localStorage.setItem('logged-user', username);
+                window.location.href = 'load.html';
+            }
+        }
+
+        if(comp == 0){
+            $('#username').css('border', '1px solid red');
+            $('#bottomform').css('border', '1px solid red');
+            $('#error').fadeIn().delay(1500).fadeOut();
+        }
+}

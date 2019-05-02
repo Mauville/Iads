@@ -22,6 +22,7 @@
 
           gtag('config', 'UA-139068767-1');
         </script>
+        <script src="js/store.everything.min.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up | Knocki</title>
@@ -41,19 +42,73 @@
 
         <div id="wrapper">
                 <h1 class="title">Email</h1>
-                <input class="form"  type="email">
+                <input id="email" class="form"  type="email">
 
                 <h1 class="title" id="message">Password</h1>
-                <input class="form"  type="password">
+                <input id="password" class="form"  type="password">
 
                 <h1 class="title" id="message">Username</h1>
-                <input class="form"  type="text">
+                <input id="username" class="form"  type="text">
 
                 <div id="termswrap">
                     <input id="terms" type="checkbox"> <h3 id="textterms">Accept Terms and Conditions</h3>
                 </div>
-                <input type="button" value="Sign up" class="button" onclick="location.href='load.html';">
+                <h1 id="error"></h1>
+                <input id="enter" type="button" value="Sign up" class="button">
         </div>
     
 </body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/signup.js"></script>
+<script>
+        //onclick="location.href='load.html';"
+        $('#enter').on('click', function(){
+                
+                var error = false;
+                
+        if ($('#email').val()=='') {
+                $('#email').css('border', '1px solid red');
+                error = true;
+        }else{
+                $('#email').css('border', '1px solid #bcbcbc');
+        }        
+
+        if ($('#password').val()=='') {
+                $('#password').css('border', '1px solid red');
+                error = true;
+        }else{
+                $('#password').css('border', '1px solid #bcbcbc');
+        }
+
+        if ($('#username').val()=='') {
+                $('#username').css('border', '1px solid red');
+                error = true;
+        }else{
+                $('#username').css('border', '1px solid #bcbcbc');
+        }
+
+                var checkbox = $('#terms').prop('checked');
+
+        if (checkbox == false) {
+                $('#textterms').css('color', 'red');
+                error = true;
+        }else{
+                $('#textterms').css('color', '#999999');
+        }
+
+        if (error) {
+              $('#error').text('You must fill all the gaps').fadeIn().delay(1500).fadeOut();
+              error = false;  
+        }
+
+        var usuario1 = $('#username').val();
+        var contraseña1 = $('#password').val();
+        var email1 = $('#email').val();
+        var active1 = 'active';
+        añadirusuario(usuario1, contraseña1, email1, active1);
+
+        });
+</script>
+
 </html>

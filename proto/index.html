@@ -25,6 +25,7 @@
 
           gtag('config', 'UA-139068767-1');
         </script>
+        <script src="js/store.everything.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
@@ -42,13 +43,25 @@
         <img src="img/knocki.png">
         <img id="logo" src="img/logo.png" alt="Knocki Logo">
 
-        <input class="form" type="text" placeholder="Username">
+        <input id="username" class="form" type="text" placeholder="Username">
         <input id="bottomform" class="form" type="password" placeholder="Password">
-        <input type="button" value="sign in" class="button" onclick="location.href='load.html';">
+        <h1 id="error">Wrong username or password</h1>
+        <input id="sign-in" type="button" value="sign in" class="button">
         <input type="button" class="button" value="sign up"id="bottombutton" onclick="location.href='signup.html';">
     </div>
 </body>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/signup.js"></script>
+<script>
 
+    localStorage.setItem('logged-user', 'null');
+
+    $('#sign-in').on('click', function(){
+        var username = $('#username').val();
+        var password = $('#bottomform').val();
+        verifyuser(username, password);
+    });
+
+</script>
 </html>
