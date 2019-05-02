@@ -53,8 +53,12 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/signup.js"></script>
 <script>
-
-    localStorage.setItem('logged-user', 'null');
+    var logged_user = {
+        username: 'null',
+        usernumber: 'null',
+        knockis: 0
+    }
+    localStorage.setItem('logged_user', JSON.stringify(logged_user));
 
     $('#sign-in').on('click', function(){
         var username = $('#username').val();

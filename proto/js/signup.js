@@ -26,7 +26,8 @@ function añadirusuario(username1, password1, email1, active1){
                 username: username1,
                 email: email1,
                 password: password1,
-                active: active1
+                active: active1,
+                knockis: 0
         };
         localStorage.setItem('user-' + counter, JSON.stringify(user));
         window.location.href = 'index.html';
@@ -39,7 +40,8 @@ function añadirusuario(username1, password1, email1, active1){
                     username: username1,
                     email: email1,
                     password: password1,
-                    active: active1
+                    active: active1,
+                    knockis: 0
             };
             localStorage.setItem('user-' + counter, JSON.stringify(user));
             window.location.href = 'index.html';
@@ -54,7 +56,10 @@ function verifyuser(username, password){
             let persona = JSON.parse(localStorage.getItem('user-'+j));
         if((persona.username == username)&&(persona.password == password)){
                 comp = 1;
-                localStorage.setItem('logged-user', username);
+                let luser = JSON.parse(localStorage.getItem('logged_user'));
+                luser.usernumber = 'user-'+j;
+                luser.username = username;
+                localStorage.setItem('logged_user',JSON.stringify(luser));
                 window.location.href = 'load.html';
             }
         }
