@@ -1,7 +1,12 @@
 //TODO add more functionality
-   localStorage.setItem('new-activity', 'null');
-
 $('#iconwrapper a').on('click', function(){
    let acname = $(this).find('.text').text();
-   localStorage.setItem('new-activity', acname);
+   let acimg = $(this).find('.outbutton').text();
+
+   let new_activity_data = JSON.parse(localStorage.getItem('new-activity'));
+
+      new_activity_data.name = acname;
+      new_activity_data.image = acimg;
+
+   localStorage.setItem('new-activity', JSON.stringify(new_activity_data));
 });
