@@ -85,11 +85,12 @@
     }
     .dot, .hyphen {
         background-color: rgb(122, 122, 122);
-        width: 16px;
-        height: 16px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         display: inline-block;
-        margin: 18px 5px 0 5px;
+        margin: 0 2.5px 4px 2.5px;
+        /* margin: 8px 0px 0 7px; */
     }
     .hyphen {
         width: 38px;

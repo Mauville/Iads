@@ -28,8 +28,8 @@ function createActivity(icon, name, code) {
 
     var dot = "<div class='dot'></div>";
     var hyphen = "<div class='hyphen'></div>";
-    precode = code.replace("d", dot)
-    postcode = precode.replace("h", hyphen)
+    precode = code.replace(/d/g, dot)
+    postcode = precode.replace(/h/g, hyphen)
   
     var code = `
     <section>
