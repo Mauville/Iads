@@ -1,6 +1,8 @@
 //TODO implement knocker getter method
 //TODO implement local storage rewriter
 
+var masterpattern = '';
+
 $(document).ready(function () {
     var dot = "<div class='dot'></div>";
     var hyphen = "<div class='hyphen'></div>";
@@ -34,9 +36,10 @@ $(document).ready(function () {
                 pattern += "h";
             }
         }
-        console.log(pattern)
+        masterpattern = pattern;
 
     });
+
     $("#taparea").on("tap", function (e) {
         e.preventDefault();
         $('#gesture').append(dot);
@@ -47,3 +50,29 @@ $(document).ready(function () {
         $('#gesture').append(hyphen);
     });
 });
+
+$('#accept').on('click', function(){
+    let activity = JSON.parse(localStorage.getItem('new-activity'));
+    add_activity(activity.name, activity.image);
+});
+
+function add_activity(activity1, img){
+    localStorage.setItem('total-activities', JSON.parse(localStorage.getItem('total-activities'))+1);
+
+    let log_user = JSON.parse(localStorage.getItem('logged_user'));
+    let knocki = JSON.parse(localStorage.getItem(log_user.knocki_used));
+    
+    knocki.activities = knocki.activities + 1;
+
+    let activity = {
+        owner_knocki: log_user.knocki_used,
+        place: knocki.place,
+        name: activity1,
+        exists: true,
+        pattern: masterpattern,
+        image: img
+    }
+
+    localStorage.setItem('activity-'+ localStorage.getItem('total-activities'), JSON.stringify(activity));
+    window.location.href = 'activities.html';
+}

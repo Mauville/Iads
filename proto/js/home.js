@@ -55,14 +55,14 @@ $(document).ready(function () {
 
     function createDevice(color, location, number) {
           var code = `<section id="knocki-${number}" class="device">
-          <a href="activities.html" class="imagelink">
+          <a class="imagelink">
             <img src="img/${color}.png" alt="knocki">
           </a>
           <h2>${location}</h2>
           <h3>Status: <span>ONLINE</span></h3>
           <p class="wheel">settings</p>
           <div id="set1">
-            <p><a href="index.html">Activities</a></p>
+            <p><a class="showactivities">Activities</a></p>
       
             <p><a href="404.html">Configuration</a></p>
             <p class="redtext">Delete Device</p>
@@ -79,6 +79,7 @@ $(document).ready(function () {
         let logged = JSON.parse(localStorage.getItem('logged_user'));
         let user = JSON.parse(localStorage.getItem(logged.usernumber));
 
+        logged.knocki_used = 'null';
         user.knockis = logged.knockis;
 
         $('#knocki-wrapper').empty();
@@ -135,6 +136,26 @@ $(document).ready(function () {
         var parent = $(this).parent().parent();
         var id = $(parent).attr('id');
         delete_knocki(id);
+    });
+
+    $('.showactivities').on('click', function(){
+        var parent = $(this).parent().parent().parent();
+        var id = $(parent).attr('id');
+        let logged = JSON.parse(localStorage.getItem('logged_user'));
+        
+        logged.knocki_used = id
+        localStorage.setItem('logged_user', JSON.stringify(logged));
+        window.location.href = 'activities.html';
+    });
+
+    $('.imagelink').on('click', function(){
+        var parent = $(this).parent();
+        var id = $(parent).attr('id');
+        let logged = JSON.parse(localStorage.getItem('logged_user'));
+        
+        logged.knocki_used = id
+        localStorage.setItem('logged_user', JSON.stringify(logged));
+        window.location.href = 'activities.html';
     });
 
     function delete_knocki(id){
