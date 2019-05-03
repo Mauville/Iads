@@ -1,6 +1,10 @@
 //TODO convert knocki stored code into bullets and dashes
 //TODO fetch info from LS
 //TODO method to refresh knocki things on load
+if (!(localStorage.getItem('logged_user'))) {
+    window.location.href = 'index.html';    
+}
+
 
 $(document).ready(function () {
 
@@ -24,7 +28,13 @@ if(localStorage.getItem('total-activities')==null){
     localStorage.setItem('total-activities', 0);
 }
 
-function createActivity(icon, name, code) {
+function screename(){
+    let user = JSON.parse(localStorage.getItem('logged_user'));
+    let knocki = JSON.parse(localStorage.getItem(user.knocki_used));
+$('#changingtext').text(knocki.place);
+}
+
+function createActivity(icon, name, code, id) {
 
     var dot = "<div class='dot'></div>";
     var hyphen = "<div class='hyphen'></div>";
@@ -32,7 +42,7 @@ function createActivity(icon, name, code) {
     postcode = precode.replace(/h/g, hyphen)
   
     var code = `
-    <section>
+    <section id="${id}">
       <a class="activity">
         <p>${icon}</p>
         <h2>${name}</h2>
@@ -41,13 +51,38 @@ function createActivity(icon, name, code) {
       </a>
       <div id="set1">
         <p><a href="knock.html">Change Pattern</a></p>
-        <p id="redtext"><a href="404.html">Delete Activity</a></p>
+        <p id="redtext"><a>Delete Activity</a></p>
       </div>
     </section>
     `
     return code;
   }
 
+  function createActivity_imgexception(icon, name, code, id) {
+
+    var dot = "<div class='dot'></div>";
+    var hyphen = "<div class='hyphen'></div>";
+    precode = code.replace(/d/g, dot)
+    postcode = precode.replace(/h/g, hyphen)
+  
+    var code = `
+    <section id="${id}">
+      <a class="activity">
+        <p><img class="exception" src="${icon}"</p>
+        <h2>${name}</h2>
+        <h3>${postcode}</h3>
+        <p class="cog">settings</p>
+      </a>
+      <div id="set1">
+        <p><a href="knock.html">Change Pattern</a></p>
+        <p id="redtext"><a>Delete Activity</a></p>
+      </div>
+    </section>
+    `
+    return code;
+  }
+
+  screename();
   show_activities();
 
 function show_activities(){
@@ -60,13 +95,51 @@ function show_activities(){
         for(var i = 1; i<=acs; i++){
             let activity = JSON.parse(localStorage.getItem('activity-'+i));
                 if (activity.owner_knocki == logged.knocki_used && activity.exists == true) {
-                    
+                    var test = 0;
+
+                    if(activity.name == 'Lights'){
+                        let icon = 'img/foco.svg';
+                        let name = activity.name;
+                        let id = activity.id;
+                        let patterncode = activity.pattern;
+                        let code = createActivity_imgexception(icon, name, patterncode, id);  
+                        test ++;
+
+                        $('#activity-wrapper').append(code);
+                    }
+
+                    if(activity.name == 'Blinds'){
+                        let icon = 'img/persianas.svg';
+                        let name = activity.name;
+                        let id = activity.id;
+                        let patterncode = activity.pattern;
+                        let code = createActivity_imgexception(icon, name, patterncode, id); 
+                        test ++; 
+
+                        $('#activity-wrapper').append(code);
+                    }
+
+                    if(activity.name == 'Mood'){
+                        let icon = 'img/love.png';
+                        let name = activity.name;
+                        let id = activity.id;
+                        let patterncode = activity.pattern;
+                        let code = createActivity_imgexception(icon, name, patterncode, id); 
+                        test ++; 
+
+                        $('#activity-wrapper').append(code);
+                    }
+
+                    if(test == 0){
                     let icon = activity.image;
                     let name = activity.name;
+                    let id = activity.id;
                     let patterncode = activity.pattern;
-                    let code = createActivity(icon, name, patterncode);
+                    let code = createActivity(icon, name, patterncode, id);
+                    test = 0;
 
                     $('#activity-wrapper').append(code);
+                    }
                 }
         }
         var verifier = {
@@ -74,4 +147,21 @@ function show_activities(){
         image : 'null',
         }
         localStorage.setItem('new-activity', JSON.stringify(verifier));
+}
+
+$('#redtext a').on('click', function(){
+    var parent = $(this).parent().parent().parent();
+    var id = $(parent).attr('id');
+    console.log(id);
+    delete_activity(id);
+});
+
+function delete_activity(id){
+    $('#'+id).remove();
+    console.log(id);
+
+    let del = JSON.parse(localStorage.getItem(id));
+    del.exists = false
+    del.status = 'off'
+    localStorage.setItem(id, JSON.stringify(del));
 }
