@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         tot++;
 
-        if (tot <= 5) {
+        if (tot <= 4) {
             if (num < 170) {
                 //tap
                 $('.store').append(dot);
@@ -66,7 +66,7 @@ function add_activity(activity1, img){
 
     let activity = {
         owner_knocki: log_user.knocki_used,
-        place: knocki.place,
+        id: 'activity-' + localStorage.getItem('total-activities'),
         name: activity1,
         exists: true,
         pattern: masterpattern,
