@@ -1,5 +1,15 @@
 //TODO implement knocker getter method
 //TODO implement local storage rewriter
+if (!(localStorage.getItem('logged_user'))) {
+    window.location.href = 'index.html';    
+}
+
+function screename(){
+    let activity = JSON.parse(localStorage.getItem('new-activity'));
+$('#changingtext').text(activity.name + ' - Pattern');
+}
+
+screename();
 
 var masterpattern = '';
 
@@ -74,5 +84,6 @@ function add_activity(activity1, img){
     }
 
     localStorage.setItem('activity-'+ localStorage.getItem('total-activities'), JSON.stringify(activity));
+    localStorage.setItem(log_user.knocki_used, JSON.stringify(knocki));
     window.location.href = 'activities.html';
 }

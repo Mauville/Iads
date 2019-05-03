@@ -1,4 +1,8 @@
 //TODO add more functionality
+if (!(localStorage.getItem('logged_user'))) {
+   window.location.href = 'index.html';    
+}
+
 $('#iconwrapper a').on('click', function(){
    let acname = $(this).find('.text').text();
    let acimg = $(this).find('.outbutton').text();
