@@ -83,6 +83,7 @@
     }
     #popup {
         position: absolute;
+        z-index: 100;
         display: none;
         top: 30%;
         left: 50%;

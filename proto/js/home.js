@@ -63,8 +63,7 @@ $(document).ready(function () {
           <p class="wheel">settings</p>
           <div id="set1">
             <p><a class="showactivities">Activities</a></p>
-      
-            <p><a href="404.html">Configuration</a></p>
+            <p><a class="configuracion">Configuration</a></p>
             <p class="redtext">Delete Device</p>
           </div>
         </section>`;

@@ -28,6 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Devices | Knocki</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/addDevice.css">
   <link rel="stylesheet" href="css/home.css">
   <script src="js/jquery.min.js"></script>
   <link href="img/favicon256.png" rel="shortcut icon" type="image/x-icon">
@@ -49,7 +50,19 @@
     <p><a href="404.html">About</a></p>
   </div>
 
+  <div id="popup">
+      <p>Where is this knocki going to be?</p>
+      <form action="" method="get">
+          <input id="place1" class="form" type="text" placeholder="Door, Table, Bureau...">
+      </form>
+      <form action="" method="get">
+          <input id="lastconfirm" type="button" value="Confirm" class="button" >
+          <!--onclick="location.href='home.html';"-->
+      </form>
+  </div>
+
   <div id="knocki-wrapper">
+      
  <!--
   <section id="knocki1" class="device">
     <a href="activities.html" class="imagelink">
@@ -87,6 +100,7 @@
 </body>
 
 <script src="js/home.js"></script>
+<script src="js/knockigenerator.js"></script>
 <script>
   
 </script>

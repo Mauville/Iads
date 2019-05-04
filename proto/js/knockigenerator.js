@@ -1,37 +1,27 @@
-/** Returns a formatted knocki device html
- * @param color  "white" or "blacc" to determine the color of the img
- * @param location  a string to display the place where the knocki is
- * @returns A string containing the html of the added Knocki Device
- */
-function createDevice(color, location) {
-  /*var code = `<section>
-    <a href="activities.html" class="device">
-      <img src="img/${color}.png" alt="knocki">
-      <h2>${location}</h2>
-      <h3>Status: <span>ONLINE</span></h3>
-      <p>settings</p>
-      <div id="set1">
-        <p><a href="404.html">Activities</a></p>
-        <p><a href="404.html">Configuration</a></p>
-        <p id="redtext"><a href="404.html">Delete Device</a></p>
-      </div>
-    </a>
-    `*/
+$('.configuracion').on('click', function(){
+  var parent = $(this).parent().parent().parent();
+  var id = $(parent).attr('id');
+  let logged = JSON.parse(localStorage.getItem('logged_user'));
+  
+  logged.knocki_used = id
+  localStorage.setItem('logged_user', JSON.stringify(logged));
 
-    var code = `<section id="knocki1" class="device">
-    <a href="activities.html" class="imagelink">
-      <img src="img/${color}.png" alt="knocki">
-    </a>
-    <h2>${location}</h2>
-    <h3>Status: <span>ONLINE</span></h3>
-    <p class="wheel">settings</p>
-    <div id="set1">
-      <p><a href="index.html">Activities</a></p>
+  $('#popup').css('display', 'block');
+});
 
-      <p><a href="404.html">Configuration</a></p>
-      <p class="redtext"><a href="404.html">Delete Device</a></p>
-    </div>
-  </section>`;
+$('#lastconfirm').on('click', function(){
+  let name = $('#place1').val();
+  let logged = JSON.parse(localStorage.getItem('logged_user'));
+  let knocki = JSON.parse(localStorage.getItem(logged.knocki_used));
 
-  return code;
+  knocki.place = name;
+
+  localStorage.setItem(logged.knocki_used, JSON.stringify(knocki));
+  window.location.href = 'home.html';
+});
+
+
+function changename(id){
+
 }
+
