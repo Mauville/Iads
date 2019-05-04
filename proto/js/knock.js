@@ -62,8 +62,20 @@ $(document).ready(function () {
 });
 
 $('#accept').on('click', function(){
-    let activity = JSON.parse(localStorage.getItem('new-activity'));
-    add_activity(activity.name, activity.image);
+    let info = JSON.parse(localStorage.getItem('new-activity'));
+    let conditional = info.name;
+
+    if(conditional == 'null'){
+        let logged = JSON.parse(localStorage.getItem('logged_user'));
+        let activity = JSON.parse(localStorage.getItem(logged.activity_used));
+        activity.pattern = masterpattern;
+        localStorage.setItem(logged.activity_used, JSON.stringify(activity));
+        window.location.href = 'activities.html';
+    }
+    else{
+        let activity = JSON.parse(localStorage.getItem('new-activity'));
+        add_activity(activity.name, activity.image);
+    }
 });
 
 function add_activity(activity1, img){
@@ -87,3 +99,16 @@ function add_activity(activity1, img){
     localStorage.setItem(log_user.knocki_used, JSON.stringify(knocki));
     window.location.href = 'activities.html';
 }
+
+$('.materialIcon').on('click', function (){
+    let info = JSON.parse(localStorage.getItem('new-activity'));
+    let conditional = info.name;
+
+    if(conditional == 'null'){
+        window.location.href = 'activities.html';
+    }
+    else{
+        window.location.href = 'newactivity.html';
+    }
+});
+

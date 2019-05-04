@@ -50,7 +50,7 @@ function createActivity(icon, name, code, id) {
         <p class="cog">settings</p>
       </a>
       <div id="set1">
-        <p><a href="knock.html">Change Pattern</a></p>
+        <p class="chp"><a>Change Pattern</a></p>
         <p id="redtext"><a>Delete Activity</a></p>
       </div>
     </section>
@@ -74,7 +74,7 @@ function createActivity(icon, name, code, id) {
         <p class="cog">settings</p>
       </a>
       <div id="set1">
-        <p><a href="knock.html">Change Pattern</a></p>
+        <p class="chp"><a>Change Pattern</a></p>
         <p id="redtext"><a>Delete Activity</a></p>
       </div>
     </section>
@@ -146,7 +146,10 @@ function show_activities(){
         name : 'null',
         image : 'null',
         }
+
+        logged.activity_used = 'null';
         localStorage.setItem('new-activity', JSON.stringify(verifier));
+        localStorage.setItem('logged_user', JSON.stringify(logged));
 }
 
 $('#redtext a').on('click', function(){
@@ -165,3 +168,13 @@ function delete_activity(id){
     del.status = 'off'
     localStorage.setItem(id, JSON.stringify(del));
 }
+
+//activity_used
+$('.chp').on('click', function(){
+  var parent = $(this).parent().parent();
+  var id = $(parent).attr('id');  
+  let logged = JSON.parse(localStorage.getItem('logged_user'));
+  logged.activity_used = id;
+  localStorage.setItem('logged_user', JSON.stringify(logged));
+  window.location.href = 'knock.html';
+})
