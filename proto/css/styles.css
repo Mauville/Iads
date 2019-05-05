@@ -127,6 +127,7 @@ header a {
     text-transform: uppercase;
     border-style: none;
     box-shadow: var(--buttonShadow);
+    -webkit-appearance: none;
 }
 
 .cornerButton {
