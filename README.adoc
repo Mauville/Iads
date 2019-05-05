@@ -21,7 +21,7 @@ image:Screenshot(50).png[DEMO,300]
 
 == Contributors 
 
-* Ãngel Heredia VÃ¡zquez with the help of https://github.com/Mauville/AutoGit[AutoGit]
+Angel Heredia Vazquez with the help of https://github.com/Mauville/AutoGit[AutoGit]
 * Repo Owner
 
 == For Recruiters
